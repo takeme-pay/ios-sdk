@@ -48,5 +48,5 @@ In TakeMePaySDK source code, you can find a lot of files in `Foundation` and `Bu
 
 ## Documentations
 
-* How to integrate TakeMePay in your app
-* How to customize your user interface for checkout view
+* [How to integrate TakeMePay in your app](./Documentations/How-to-integrate-TakeMePay-in-your-app/How-to-integrate-TakeMePay-in-your-app.md)
+* [How to customize your user interface for checkout view](./Documentations/How-to-customize-your-user-interface-for-checkout-view/How-to-customize-your-user-interface-for-checkout-view.md)
