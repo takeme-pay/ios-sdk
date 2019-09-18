@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  TakeMePaySDK
+
+  Created by tianren.zhu on 2019/5/4.
+  Copyright © 2019 JapanFoodie. All rights reserved.
+*/
+
+"TMP_CheckoutCounter:Pay with" = "Pay with";
+
+"TMP_CheckoutCounter:Pay" = "Pay";
+
+"TMP_CheckoutCounter:Please try again" = "Please try again";
+
+"TMP_CheckoutCounter:Success" = "Success";
+
+"TMP_CheckoutCounter:Please wait..." = "Please wait...";
+
+"TMP_CheckoutCounter:Powered by TakeMe Pay" = "Powered by TakeMe Pay";
+
+"TMP_CheckoutCounter:Don't retry payment if you have paid" = "Don't retry payment if you have paid";
+
+"TMP_PaymentMethod:Payment" = "Payment";
+
+"TMP_PaymentMethod:WeChatPay" = "WeChat Pay";
+
+"TMP_PaymentMethod:Alipay" = "Alipay";

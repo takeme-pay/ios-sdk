@@ -1,0 +1,1881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		CEEC132521F8449300D393B1 /* Universal-TakeMePaySDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CEEC132621F8449300D393B1 /* Build configuration list for PBXAggregateTarget "Universal-TakeMePaySDK" */;
+			buildPhases = (
+				CEEC132921F844B600D393B1 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Universal-TakeMePaySDK";
+			productName = "Universal-TakeMeSDK";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		52FA76DB9019330D349B7C57 /* Pods_TakeMePaySDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 732FE41A96265F99FF0EB23C /* Pods_TakeMePaySDKTests.framework */; };
+		CE097EA221DDAC2A009CF715 /* TMImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = CE097EA021DDAC29009CF715 /* TMImageLoader.h */; };
+		CE097EA321DDAC2A009CF715 /* TMImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE097EA121DDAC29009CF715 /* TMImageLoader.m */; };
+		CE097EA621DDACB1009CF715 /* UIImageView+TMDownLoadImage.h in Headers */ = {isa = PBXBuildFile; fileRef = CE097EA421DDACB0009CF715 /* UIImageView+TMDownLoadImage.h */; };
+		CE097EA721DDACB1009CF715 /* UIImageView+TMDownLoadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CE097EA521DDACB0009CF715 /* UIImageView+TMDownLoadImage.m */; };
+		CE097EAB21DDC958009CF715 /* TMPSourceTypeListParams.h in Headers */ = {isa = PBXBuildFile; fileRef = CE097EA921DDC958009CF715 /* TMPSourceTypeListParams.h */; };
+		CE097EAC21DDC958009CF715 /* TMPSourceTypeListParams.m in Sources */ = {isa = PBXBuildFile; fileRef = CE097EAA21DDC958009CF715 /* TMPSourceTypeListParams.m */; };
+		CE097EAF21DDC9AF009CF715 /* TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CE097EAD21DDC9AF009CF715 /* TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.h */; };
+		CE097EB021DDC9AF009CF715 /* TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CE097EAE21DDC9AF009CF715 /* TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.m */; };
+		CE097EB521DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE097EB221DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.h */; };
+		CE097EB621DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE097EB321DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.m */; };
+		CE097EB721DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE097EB421DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.xib */; };
+		CE097EBC21DEE289009CF715 /* TMPDefaultPaymentAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = CE097EBA21DEE289009CF715 /* TMPDefaultPaymentAnimator.h */; };
+		CE097EBD21DEE289009CF715 /* TMPDefaultPaymentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE097EBB21DEE289009CF715 /* TMPDefaultPaymentAnimator.m */; };
+		CE20C50E2251E4E700CDBB21 /* TMPPaymentAlipay.h in Headers */ = {isa = PBXBuildFile; fileRef = CE20C50C2251E4E700CDBB21 /* TMPPaymentAlipay.h */; };
+		CE20C50F2251E4E700CDBB21 /* TMPPaymentAlipay.m in Sources */ = {isa = PBXBuildFile; fileRef = CE20C50D2251E4E700CDBB21 /* TMPPaymentAlipay.m */; };
+		CE252C0A21ECCA34005D0616 /* TMPSDKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CE252C0921ECCA33005D0616 /* TMPSDKConstants.h */; };
+		CE252C1121ED729C005D0616 /* TMPSourceContext+TMPPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CE252C0F21ED729C005D0616 /* TMPSourceContext+TMPPrivate.h */; };
+		CE252C1221ED729C005D0616 /* TMPSourceContext+TMPPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE252C1021ED729C005D0616 /* TMPSourceContext+TMPPrivate.m */; };
+		CE252C1521ED79CE005D0616 /* TMPPaymentEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = CE252C1421ED79CE005D0616 /* TMPPaymentEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE252C1921EDB376005D0616 /* TMDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CE252C1721EDB376005D0616 /* TMDeviceInfo.h */; };
+		CE252C1A21EDB376005D0616 /* TMDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE252C1821EDB376005D0616 /* TMDeviceInfo.m */; };
+		CE252C1D21EDBC68005D0616 /* TMPReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = CE252C1B21EDBC68005D0616 /* TMPReachability.h */; };
+		CE252C1E21EDBC68005D0616 /* TMPReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE252C1C21EDBC68005D0616 /* TMPReachability.m */; };
+		CE252C2B21F054F6005D0616 /* TMPUIPaymentSourceParamsPreparer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE252C2921F054F6005D0616 /* TMPUIPaymentSourceParamsPreparer.h */; };
+		CE252C2C21F054F6005D0616 /* TMPUIPaymentSourceParamsPreparer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE252C2A21F054F6005D0616 /* TMPUIPaymentSourceParamsPreparer.m */; };
+		CE252C2E21F19294005D0616 /* TMPSourceTypeConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CE252C2D21F19294005D0616 /* TMPSourceTypeConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE252C3121F54FC2005D0616 /* TMPPaymentMethodItem+TMPUIInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = CE252C2F21F54FC2005D0616 /* TMPPaymentMethodItem+TMPUIInfo.h */; };
+		CE252C3221F54FC2005D0616 /* TMPPaymentMethodItem+TMPUIInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CE252C3021F54FC2005D0616 /* TMPPaymentMethodItem+TMPUIInfo.m */; };
+		CE252C3B21F55999005D0616 /* TMPPaymentMethod+TMPPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CE252C3921F55999005D0616 /* TMPPaymentMethod+TMPPrivate.h */; };
+		CE252C3C21F55999005D0616 /* TMPPaymentMethod+TMPPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE252C3A21F55999005D0616 /* TMPPaymentMethod+TMPPrivate.m */; };
+		CE2C33C52228C68A00088924 /* TMPRemoteLogPersistenceStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2C33C42228C68A00088924 /* TMPRemoteLogPersistenceStrategy.h */; };
+		CE2C33C92228CA3800088924 /* TMPRemoteLogPersistenceItemCountsStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2C33C72228CA3800088924 /* TMPRemoteLogPersistenceItemCountsStrategy.h */; };
+		CE2C33CA2228CA3800088924 /* TMPRemoteLogPersistenceItemCountsStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C33C82228CA3800088924 /* TMPRemoteLogPersistenceItemCountsStrategy.m */; };
+		CE2C33CD222BC76A00088924 /* TMPRemoteLogInfo+TMPPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2C33CB222BC76A00088924 /* TMPRemoteLogInfo+TMPPrivate.h */; };
+		CE2C33CE222BC76A00088924 /* TMPRemoteLogInfo+TMPPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C33CC222BC76A00088924 /* TMPRemoteLogInfo+TMPPrivate.m */; };
+		CE2C33D7222CEEC400088924 /* TMPCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2C33D5222CEEC400088924 /* TMPCrashReporter.h */; };
+		CE2C33D8222CEEC400088924 /* TMPCrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C33D6222CEEC400088924 /* TMPCrashReporter.m */; };
+		CE32AAB822656C9D00A95D0A /* TMPSourceTypesContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CE32AAB622656C9D00A95D0A /* TMPSourceTypesContext.h */; };
+		CE32AAB922656C9D00A95D0A /* TMPSourceTypesContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CE32AAB722656C9D00A95D0A /* TMPSourceTypesContext.m */; };
+		CE37A92D228AB7930049C71A /* TMPPayment+TMPClosureSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CE37A92B228AB7930049C71A /* TMPPayment+TMPClosureSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE37A92E228AB7930049C71A /* TMPPayment+TMPClosureSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CE37A92C228AB7930049C71A /* TMPPayment+TMPClosureSupport.m */; };
+		CE3EDA4D227D447900E30C11 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3EDA4F227D447900E30C11 /* Localizable.strings */; };
+		CE815C1822607DA80085FF3A /* TMPPaymentSourceParamsPreparer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE815C1722607DA80085FF3A /* TMPPaymentSourceParamsPreparer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8631F12215006300C78BBA /* TMPURLListener.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8631F02215006300C78BBA /* TMPURLListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA28721C74564003CF3FB /* TakeMePaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8FA27D21C74563003CF3FB /* TakeMePaySDK.framework */; };
+		CE8FA28C21C74564003CF3FB /* TakeMePaySDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA28B21C74564003CF3FB /* TakeMePaySDKTests.m */; };
+		CE8FA28E21C74564003CF3FB /* TakeMePaySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA28021C74563003CF3FB /* TakeMePaySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA2A721C75BEE003CF3FB /* TMPPaymentDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2A621C75BEE003CF3FB /* TMPPaymentDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA2AA21C75C7C003CF3FB /* TMPSource.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2A821C75C7C003CF3FB /* TMPSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA2AB21C75C7C003CF3FB /* TMPSource.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2A921C75C7C003CF3FB /* TMPSource.m */; };
+		CE8FA2B221C75CB6003CF3FB /* TMPPaymentServiceClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2B021C75CB6003CF3FB /* TMPPaymentServiceClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA2B321C75CB6003CF3FB /* TMPPaymentServiceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2B121C75CB6003CF3FB /* TMPPaymentServiceClient.m */; };
+		CE8FA2B621C75D10003CF3FB /* TMPPayment.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2B421C75D10003CF3FB /* TMPPayment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA2B721C75D10003CF3FB /* TMPPayment.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2B521C75D10003CF3FB /* TMPPayment.m */; };
+		CE8FA2BF21C75E0F003CF3FB /* TMPPaymentAuthViaWebRedirect.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2BD21C75E0F003CF3FB /* TMPPaymentAuthViaWebRedirect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA2C021C75E0F003CF3FB /* TMPPaymentAuthViaWebRedirect.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2BE21C75E0F003CF3FB /* TMPPaymentAuthViaWebRedirect.m */; };
+		CE8FA2CE21C76423003CF3FB /* TMEndpointAPIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2CB21C76422003CF3FB /* TMEndpointAPIRequest.h */; };
+		CE8FA2CF21C76423003CF3FB /* TMEndpointService.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2CC21C76423003CF3FB /* TMEndpointService.h */; };
+		CE8FA2D021C76423003CF3FB /* TMNetworkDataSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2CD21C76423003CF3FB /* TMNetworkDataSerializer.h */; };
+		CE8FA2E721C765A4003CF3FB /* TMNetworkDataFormURLEncodedSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2E321C765A3003CF3FB /* TMNetworkDataFormURLEncodedSerializer.m */; };
+		CE8FA2E821C765A4003CF3FB /* TMNetworkDataJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2E421C765A3003CF3FB /* TMNetworkDataJSONSerializer.h */; };
+		CE8FA2E921C765A4003CF3FB /* TMNetworkDataJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2E521C765A4003CF3FB /* TMNetworkDataJSONSerializer.m */; };
+		CE8FA2EA21C765A4003CF3FB /* TMNetworkDataFormURLEncodedSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2E621C765A4003CF3FB /* TMNetworkDataFormURLEncodedSerializer.h */; };
+		CE8FA2ED21C765AF003CF3FB /* TMNetworkConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2EB21C765AE003CF3FB /* TMNetworkConfiguration.h */; };
+		CE8FA2EE21C765AF003CF3FB /* TMNetworkConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2EC21C765AE003CF3FB /* TMNetworkConfiguration.m */; };
+		CE8FA2F321C765DC003CF3FB /* TMEndpointRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2F121C765DB003CF3FB /* TMEndpointRequestOperation.h */; };
+		CE8FA2F421C765DC003CF3FB /* TMEndpointRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2F221C765DC003CF3FB /* TMEndpointRequestOperation.m */; };
+		CE8FA2F721C765E3003CF3FB /* TMNetworkingOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2F521C765E3003CF3FB /* TMNetworkingOperationManager.m */; };
+		CE8FA2F821C765E3003CF3FB /* TMNetworkingOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2F621C765E3003CF3FB /* TMNetworkingOperationManager.h */; };
+		CE8FA2FD21C765EF003CF3FB /* TMEndpointServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2F921C765EE003CF3FB /* TMEndpointServiceImpl.m */; };
+		CE8FA2FE21C765EF003CF3FB /* TMEndpointServiceImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2FA21C765EE003CF3FB /* TMEndpointServiceImpl.h */; };
+		CE8FA2FF21C765EF003CF3FB /* TMEndpointAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA2FB21C765EE003CF3FB /* TMEndpointAPIManager.h */; };
+		CE8FA30021C765EF003CF3FB /* TMEndpointAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA2FC21C765EE003CF3FB /* TMEndpointAPIManager.m */; };
+		CE8FA30421C76784003CF3FB /* TMUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA30221C76784003CF3FB /* TMUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA30521C76784003CF3FB /* TMUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA30321C76784003CF3FB /* TMUtils.m */; };
+		CE8FA30D21C77740003CF3FB /* TMDictionaryConvertible.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA30C21C77740003CF3FB /* TMDictionaryConvertible.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA31121C78163003CF3FB /* TMPPaymentUIThemeAcceptable.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA31021C78163003CF3FB /* TMPPaymentUIThemeAcceptable.h */; };
+		CE8FA31321C781F1003CF3FB /* TMPPaymentUIFullyCustomizer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA31221C781F1003CF3FB /* TMPPaymentUIFullyCustomizer.h */; };
+		CE8FA31621C78314003CF3FB /* TMPPaymentDefaultUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA31421C78314003CF3FB /* TMPPaymentDefaultUI.h */; };
+		CE8FA31721C78314003CF3FB /* TMPPaymentDefaultUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA31521C78314003CF3FB /* TMPPaymentDefaultUI.m */; };
+		CE8FA32421C877DA003CF3FB /* TMPPaymentAuthorizable.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA32321C877DA003CF3FB /* TMPPaymentAuthorizable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA32821C87998003CF3FB /* TMPConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA32621C87998003CF3FB /* TMPConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA32921C87998003CF3FB /* TMPConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA32721C87998003CF3FB /* TMPConfiguration.m */; };
+		CE8FA34521C8C0C0003CF3FB /* TMPSourceParams.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA34321C8C0C0003CF3FB /* TMPSourceParams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA34621C8C0C0003CF3FB /* TMPSourceParams.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA34421C8C0C0003CF3FB /* TMPSourceParams.m */; };
+		CE8FA34A21C8D1A1003CF3FB /* TMPSourcePoller.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA34821C8D1A1003CF3FB /* TMPSourcePoller.h */; };
+		CE8FA34B21C8D1A1003CF3FB /* TMPSourcePoller.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA34921C8D1A1003CF3FB /* TMPSourcePoller.m */; };
+		CE8FA35621CA25DE003CF3FB /* NSArray+TMFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA35421CA25DD003CF3FB /* NSArray+TMFExtension.m */; };
+		CE8FA35721CA25DE003CF3FB /* NSArray+TMFExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA35521CA25DE003CF3FB /* NSArray+TMFExtension.h */; };
+		CE8FA35A21CA26DD003CF3FB /* NSMutableDictionary+TMFExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA35821CA26DD003CF3FB /* NSMutableDictionary+TMFExtension.h */; };
+		CE8FA35B21CA26DD003CF3FB /* NSMutableDictionary+TMFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA35921CA26DD003CF3FB /* NSMutableDictionary+TMFExtension.m */; };
+		CE8FA36F21CB7A15003CF3FB /* TMPSourceContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA36D21CB7A15003CF3FB /* TMPSourceContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA37021CB7A15003CF3FB /* TMPSourceContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA36E21CB7A15003CF3FB /* TMPSourceContext.m */; };
+		CE8FA37D21CB911A003CF3FB /* TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA37B21CB911A003CF3FB /* TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.h */; };
+		CE8FA37E21CB911A003CF3FB /* TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA37C21CB911A003CF3FB /* TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.m */; };
+		CE8FA38721D07ED7003CF3FB /* TMPPaymentUICheckoutCounterRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA38621D07ED7003CF3FB /* TMPPaymentUICheckoutCounterRenderer.h */; };
+		CE8FA38921D07FA4003CF3FB /* TMPPaymentUIPaymentMethodRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA38821D07FA4003CF3FB /* TMPPaymentUIPaymentMethodRenderer.h */; };
+		CE8FA38F21D0847A003CF3FB /* TMPPaymentUICheckoutCounterLogicResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA38E21D0847A003CF3FB /* TMPPaymentUICheckoutCounterLogicResponder.h */; };
+		CE8FA39121D08A17003CF3FB /* TMPPaymentUIPaymentMethodLogicResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA39021D08A17003CF3FB /* TMPPaymentUIPaymentMethodLogicResponder.h */; };
+		CE8FA39421D08E83003CF3FB /* TMPPaymentMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA39221D08E83003CF3FB /* TMPPaymentMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8FA39521D08E83003CF3FB /* TMPPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA39321D08E83003CF3FB /* TMPPaymentMethod.m */; };
+		CE8FA3B321D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA3B021D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.h */; };
+		CE8FA3B421D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA3B121D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.m */; };
+		CE8FA3B521D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8FA3B221D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.xib */; };
+		CE8FA3B921D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA3B621D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.h */; };
+		CE8FA3BA21D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA3B721D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.m */; };
+		CE8FA3BB21D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8FA3B821D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.xib */; };
+		CE8FA3C021D0BF10003CF3FB /* TMPPaymentUITheme.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA3BE21D0BF10003CF3FB /* TMPPaymentUITheme.h */; };
+		CE8FA3C121D0BF10003CF3FB /* TMPPaymentUITheme.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8FA3BF21D0BF10003CF3FB /* TMPPaymentUITheme.m */; };
+		CE9BF98922642510003C7B78 /* TMPPaymentRequestStatePoller.h in Headers */ = {isa = PBXBuildFile; fileRef = CE9BF98722642510003C7B78 /* TMPPaymentRequestStatePoller.h */; };
+		CE9BF98A22642510003C7B78 /* TMPPaymentRequestStatePoller.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BF98822642510003C7B78 /* TMPPaymentRequestStatePoller.m */; };
+		CEBB853D21E2E72B00CAAD7B /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBB853C21E2E72B00CAAD7B /* Resources.xcassets */; };
+		CEBB854121E3078700CAAD7B /* UIImage+TMPLoadImageFromSDKBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB853F21E3078700CAAD7B /* UIImage+TMPLoadImageFromSDKBundle.h */; };
+		CEBB854221E3078700CAAD7B /* UIImage+TMPLoadImageFromSDKBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB854021E3078700CAAD7B /* UIImage+TMPLoadImageFromSDKBundle.m */; };
+		CEBB854A21E4463B00CAAD7B /* TMLocalizationUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB854821E4463B00CAAD7B /* TMLocalizationUtils.h */; };
+		CEBB854B21E4463B00CAAD7B /* TMLocalizationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB854921E4463B00CAAD7B /* TMLocalizationUtils.m */; };
+		CEBB855221E472BF00CAAD7B /* TMLogService.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB855021E472BF00CAAD7B /* TMLogService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEBB855321E472BF00CAAD7B /* TMLogService.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB855121E472BF00CAAD7B /* TMLogService.m */; };
+		CEBB855821E5C28400CAAD7B /* TMPSourceParams+TMPPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB855621E5C28300CAAD7B /* TMPSourceParams+TMPPrivate.h */; };
+		CEBB855921E5C28400CAAD7B /* TMPSourceParams+TMPPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB855721E5C28300CAAD7B /* TMPSourceParams+TMPPrivate.m */; };
+		CEBB855B21E5C45700CAAD7B /* TMPPaymentSourceParamsProcessable.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB855A21E5C45700CAAD7B /* TMPPaymentSourceParamsProcessable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEBB855E21E5D66500CAAD7B /* TakeMePay+TMPPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB855C21E5D66500CAAD7B /* TakeMePay+TMPPrivate.h */; };
+		CEBB855F21E5D66500CAAD7B /* TakeMePay+TMPPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB855D21E5D66500CAAD7B /* TakeMePay+TMPPrivate.m */; };
+		CEBB856F21E6DA5A00CAAD7B /* TMLoggerEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB856E21E6DA5A00CAAD7B /* TMLoggerEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEBB857521E6DC5600CAAD7B /* TMLogLevelObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB857421E6DC5600CAAD7B /* TMLogLevelObserver.h */; };
+		CEBB857921E6E2AC00CAAD7B /* TMLogConsolePrinter.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB857721E6E2AC00CAAD7B /* TMLogConsolePrinter.h */; };
+		CEBB857A21E6E2AC00CAAD7B /* TMLogConsolePrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB857821E6E2AC00CAAD7B /* TMLogConsolePrinter.m */; };
+		CEBB857C21E70A0E00CAAD7B /* TMErrorConvertible.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB857B21E70A0E00CAAD7B /* TMErrorConvertible.h */; };
+		CEBB857F21E70F6100CAAD7B /* TMLogInformation+TMPErrorConvertible.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB857D21E70F6100CAAD7B /* TMLogInformation+TMPErrorConvertible.h */; };
+		CEBB858021E70F6100CAAD7B /* TMLogInformation+TMPErrorConvertible.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB857E21E70F6100CAAD7B /* TMLogInformation+TMPErrorConvertible.m */; };
+		CEBB858421E7115F00CAAD7B /* TMPRemoteLogReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB858221E7115F00CAAD7B /* TMPRemoteLogReporter.h */; };
+		CEBB858521E7115F00CAAD7B /* TMPRemoteLogReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB858321E7115F00CAAD7B /* TMPRemoteLogReporter.m */; };
+		CEBB858F21E73D5400CAAD7B /* _TMPPaymentLogInformationInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB858D21E73D5400CAAD7B /* _TMPPaymentLogInformationInterceptor.h */; };
+		CEBB859021E73D5400CAAD7B /* _TMPPaymentLogInformationInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB858E21E73D5400CAAD7B /* _TMPPaymentLogInformationInterceptor.m */; };
+		CEBB85AB21E82CD100CAAD7B /* UILabel+TMPLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB85A921E82CD000CAAD7B /* UILabel+TMPLocalization.h */; };
+		CEBB85AC21E82CD100CAAD7B /* UILabel+TMPLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB85AA21E82CD000CAAD7B /* UILabel+TMPLocalization.m */; };
+		CEBB85AF21E82EF900CAAD7B /* UIButton+TMPLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = CEBB85AD21E82EF900CAAD7B /* UIButton+TMPLocalization.h */; };
+		CEBB85B021E82EF900CAAD7B /* UIButton+TMPLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB85AE21E82EF900CAAD7B /* UIButton+TMPLocalization.m */; };
+		CEBB85C221E854D100CAAD7B /* PaymentIcons.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBB85C121E854D100CAAD7B /* PaymentIcons.plist */; };
+		CECF1126225C8CA00008E7E7 /* TMPSource+TMPPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CECF1124225C8CA00008E7E7 /* TMPSource+TMPPrivate.h */; };
+		CECF1127225C8CA00008E7E7 /* TMPSource+TMPPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = CECF1125225C8CA00008E7E7 /* TMPSource+TMPPrivate.m */; };
+		CED5FADF21D2637E006F5839 /* TakeMePay.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5FADD21D2637E006F5839 /* TakeMePay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CED5FAE021D2637E006F5839 /* TakeMePay.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5FADE21D2637E006F5839 /* TakeMePay.m */; };
+		CED5FAEA21D4AED7006F5839 /* TMPPaymentServiceClient+TMPPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5FAE821D4AED7006F5839 /* TMPPaymentServiceClient+TMPPrivate.h */; };
+		CED5FAEB21D4AED7006F5839 /* TMPPaymentServiceClient+TMPPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5FAE921D4AED7006F5839 /* TMPPaymentServiceClient+TMPPrivate.m */; };
+		CED5FAF321D5C0EC006F5839 /* NSError+TMPErrorGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5FAF121D5C0EC006F5839 /* NSError+TMPErrorGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CED5FAF421D5C0EC006F5839 /* NSError+TMPErrorGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5FAF221D5C0EC006F5839 /* NSError+TMPErrorGenerator.m */; };
+		CED5FB3D21DC3D39006F5839 /* TMPPaymentVCPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5FB3C21DC3D39006F5839 /* TMPPaymentVCPresenter.h */; };
+		CED5FB4121DC3EA5006F5839 /* TMPDefaultPaymentVCPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5FB3F21DC3EA5006F5839 /* TMPDefaultPaymentVCPresenter.h */; };
+		CED5FB4221DC3EA5006F5839 /* TMPDefaultPaymentVCPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5FB4021DC3EA5006F5839 /* TMPDefaultPaymentVCPresenter.m */; };
+		CED5FB8121DC4920006F5839 /* TMPSourceEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = CE8FA30921C770C4003CF3FB /* TMPSourceEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CED5FB8D21DC89A2006F5839 /* TMPDefaultPaymentPresentationController.h in Headers */ = {isa = PBXBuildFile; fileRef = CED5FB8B21DC89A2006F5839 /* TMPDefaultPaymentPresentationController.h */; };
+		CED5FB8E21DC89A2006F5839 /* TMPDefaultPaymentPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED5FB8C21DC89A2006F5839 /* TMPDefaultPaymentPresentationController.m */; };
+		CEEC127821F69C1700D393B1 /* TMPPayment+TMPPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEC127621F69C1700D393B1 /* TMPPayment+TMPPrivate.h */; };
+		CEEC127921F69C1700D393B1 /* TMPPayment+TMPPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC127721F69C1700D393B1 /* TMPPayment+TMPPrivate.m */; };
+		CEEC128A21F6EEC000D393B1 /* NSDictionary+TMPExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEC128821F6EEC000D393B1 /* NSDictionary+TMPExtension.h */; };
+		CEEC128B21F6EEC000D393B1 /* NSDictionary+TMPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC128921F6EEC000D393B1 /* NSDictionary+TMPExtension.m */; };
+		CEEC129521F6F43400D393B1 /* TMPPaymentMethodRegisterSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CEEC129321F6F43400D393B1 /* TMPPaymentMethodRegisterSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEEC129621F6F43400D393B1 /* TMPPaymentMethodRegisterSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC129421F6F43400D393B1 /* TMPPaymentMethodRegisterSupport.m */; };
+		CEFC513A228BDF8500A0618F /* _TMPPaymentClosureSupportInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = CEFC5138228BDF8500A0618F /* _TMPPaymentClosureSupportInterceptor.h */; };
+		CEFC513B228BDF8500A0618F /* _TMPPaymentClosureSupportInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5139228BDF8500A0618F /* _TMPPaymentClosureSupportInterceptor.m */; };
+		CEFC5141228BF28900A0618F /* TMPTestSourceParamsPreparer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5140228BF28900A0618F /* TMPTestSourceParamsPreparer.m */; };
+		CEFC5144228BF2A500A0618F /* TMPTestPaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5143228BF2A500A0618F /* TMPTestPaymentMethod.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE8FA28821C74564003CF3FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE8FA27421C74563003CF3FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE8FA27C21C74563003CF3FB;
+			remoteInfo = TakeMePaySDK;
+		};
+		CEF09440226479AE00FACDC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF09437226479AE00FACDC2 /* TakeMePayWeChatPaySupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE9BF95222641D91003C7B78;
+			remoteInfo = TakeMePayWeChatPaySupport;
+		};
+		CEF09442226479AE00FACDC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEF09437226479AE00FACDC2 /* TakeMePayWeChatPaySupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE9BF95B22641D91003C7B78;
+			remoteInfo = TakeMePayWeChatPaySupportTests;
+		};
+		CEFC519C228E432E00A0618F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFC5196228E432D00A0618F /* CoffeeDelivery.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CEEC133321F8596800D393B1;
+			remoteInfo = CoffeeDelivery;
+		};
+		CEFC519E228E432E00A0618F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFC5196228E432D00A0618F /* CoffeeDelivery.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CEEC134B21F8596900D393B1;
+			remoteInfo = CoffeeDeliveryTests;
+		};
+		CEFC51A0228E432E00A0618F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEFC5196228E432D00A0618F /* CoffeeDelivery.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CEEC135621F8596900D393B1;
+			remoteInfo = CoffeeDeliveryUITests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3162115E1D55300ACA6A58EB /* Pods-TakeMePaySDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeMePaySDKTests.debug.xcconfig"; path = "Target Support Files/Pods-TakeMePaySDKTests/Pods-TakeMePaySDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		732FE41A96265F99FF0EB23C /* Pods_TakeMePaySDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakeMePaySDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE097EA021DDAC29009CF715 /* TMImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMImageLoader.h; sourceTree = "<group>"; };
+		CE097EA121DDAC29009CF715 /* TMImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMImageLoader.m; sourceTree = "<group>"; };
+		CE097EA421DDACB0009CF715 /* UIImageView+TMDownLoadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+TMDownLoadImage.h"; sourceTree = "<group>"; };
+		CE097EA521DDACB0009CF715 /* UIImageView+TMDownLoadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+TMDownLoadImage.m"; sourceTree = "<group>"; };
+		CE097EA921DDC958009CF715 /* TMPSourceTypeListParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPSourceTypeListParams.h; sourceTree = "<group>"; };
+		CE097EAA21DDC958009CF715 /* TMPSourceTypeListParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPSourceTypeListParams.m; sourceTree = "<group>"; };
+		CE097EAD21DDC9AF009CF715 /* TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.h"; sourceTree = "<group>"; };
+		CE097EAE21DDC9AF009CF715 /* TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.m"; sourceTree = "<group>"; };
+		CE097EB221DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.h; sourceTree = "<group>"; };
+		CE097EB321DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.m; sourceTree = "<group>"; };
+		CE097EB421DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.xib; sourceTree = "<group>"; };
+		CE097EBA21DEE289009CF715 /* TMPDefaultPaymentAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPDefaultPaymentAnimator.h; sourceTree = "<group>"; };
+		CE097EBB21DEE289009CF715 /* TMPDefaultPaymentAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPDefaultPaymentAnimator.m; sourceTree = "<group>"; };
+		CE20C50C2251E4E700CDBB21 /* TMPPaymentAlipay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentAlipay.h; sourceTree = "<group>"; };
+		CE20C50D2251E4E700CDBB21 /* TMPPaymentAlipay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentAlipay.m; sourceTree = "<group>"; };
+		CE252C0921ECCA33005D0616 /* TMPSDKConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPSDKConstants.h; sourceTree = "<group>"; };
+		CE252C0F21ED729C005D0616 /* TMPSourceContext+TMPPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPSourceContext+TMPPrivate.h"; sourceTree = "<group>"; };
+		CE252C1021ED729C005D0616 /* TMPSourceContext+TMPPrivate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPSourceContext+TMPPrivate.m"; sourceTree = "<group>"; };
+		CE252C1421ED79CE005D0616 /* TMPPaymentEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentEnums.h; sourceTree = "<group>"; };
+		CE252C1721EDB376005D0616 /* TMDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDeviceInfo.h; sourceTree = "<group>"; };
+		CE252C1821EDB376005D0616 /* TMDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMDeviceInfo.m; sourceTree = "<group>"; };
+		CE252C1B21EDBC68005D0616 /* TMPReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPReachability.h; sourceTree = "<group>"; };
+		CE252C1C21EDBC68005D0616 /* TMPReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPReachability.m; sourceTree = "<group>"; };
+		CE252C2921F054F6005D0616 /* TMPUIPaymentSourceParamsPreparer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPUIPaymentSourceParamsPreparer.h; sourceTree = "<group>"; };
+		CE252C2A21F054F6005D0616 /* TMPUIPaymentSourceParamsPreparer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPUIPaymentSourceParamsPreparer.m; sourceTree = "<group>"; };
+		CE252C2D21F19294005D0616 /* TMPSourceTypeConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPSourceTypeConstants.h; sourceTree = "<group>"; };
+		CE252C2F21F54FC2005D0616 /* TMPPaymentMethodItem+TMPUIInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPPaymentMethodItem+TMPUIInfo.h"; sourceTree = "<group>"; };
+		CE252C3021F54FC2005D0616 /* TMPPaymentMethodItem+TMPUIInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPPaymentMethodItem+TMPUIInfo.m"; sourceTree = "<group>"; };
+		CE252C3921F55999005D0616 /* TMPPaymentMethod+TMPPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPPaymentMethod+TMPPrivate.h"; sourceTree = "<group>"; };
+		CE252C3A21F55999005D0616 /* TMPPaymentMethod+TMPPrivate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPPaymentMethod+TMPPrivate.m"; sourceTree = "<group>"; };
+		CE2C33C42228C68A00088924 /* TMPRemoteLogPersistenceStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPRemoteLogPersistenceStrategy.h; sourceTree = "<group>"; };
+		CE2C33C72228CA3800088924 /* TMPRemoteLogPersistenceItemCountsStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPRemoteLogPersistenceItemCountsStrategy.h; sourceTree = "<group>"; };
+		CE2C33C82228CA3800088924 /* TMPRemoteLogPersistenceItemCountsStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPRemoteLogPersistenceItemCountsStrategy.m; sourceTree = "<group>"; };
+		CE2C33CB222BC76A00088924 /* TMPRemoteLogInfo+TMPPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPRemoteLogInfo+TMPPrivate.h"; sourceTree = "<group>"; };
+		CE2C33CC222BC76A00088924 /* TMPRemoteLogInfo+TMPPrivate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPRemoteLogInfo+TMPPrivate.m"; sourceTree = "<group>"; };
+		CE2C33D5222CEEC400088924 /* TMPCrashReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPCrashReporter.h; sourceTree = "<group>"; };
+		CE2C33D6222CEEC400088924 /* TMPCrashReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPCrashReporter.m; sourceTree = "<group>"; };
+		CE32AAB622656C9D00A95D0A /* TMPSourceTypesContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPSourceTypesContext.h; sourceTree = "<group>"; };
+		CE32AAB722656C9D00A95D0A /* TMPSourceTypesContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPSourceTypesContext.m; sourceTree = "<group>"; };
+		CE37A92B228AB7930049C71A /* TMPPayment+TMPClosureSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPPayment+TMPClosureSupport.h"; sourceTree = "<group>"; };
+		CE37A92C228AB7930049C71A /* TMPPayment+TMPClosureSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPPayment+TMPClosureSupport.m"; sourceTree = "<group>"; };
+		CE3EDA4E227D447900E30C11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE55184E227D4B4C006C1502 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE551851227D4B5A006C1502 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE551853227D4B6B006C1502 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		CE635CE9227D48BE00E116E6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE815C1722607DA80085FF3A /* TMPPaymentSourceParamsPreparer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentSourceParamsPreparer.h; sourceTree = "<group>"; };
+		CE8631F02215006300C78BBA /* TMPURLListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPURLListener.h; sourceTree = "<group>"; };
+		CE8FA27D21C74563003CF3FB /* TakeMePaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TakeMePaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8FA28021C74563003CF3FB /* TakeMePaySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TakeMePaySDK.h; sourceTree = "<group>"; };
+		CE8FA28121C74563003CF3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8FA28621C74564003CF3FB /* TakeMePaySDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakeMePaySDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8FA28B21C74564003CF3FB /* TakeMePaySDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakeMePaySDKTests.m; sourceTree = "<group>"; };
+		CE8FA28D21C74564003CF3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8FA2A621C75BEE003CF3FB /* TMPPaymentDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentDelegate.h; sourceTree = "<group>"; };
+		CE8FA2A821C75C7C003CF3FB /* TMPSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPSource.h; sourceTree = "<group>"; };
+		CE8FA2A921C75C7C003CF3FB /* TMPSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPSource.m; sourceTree = "<group>"; };
+		CE8FA2B021C75CB6003CF3FB /* TMPPaymentServiceClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentServiceClient.h; sourceTree = "<group>"; };
+		CE8FA2B121C75CB6003CF3FB /* TMPPaymentServiceClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentServiceClient.m; sourceTree = "<group>"; };
+		CE8FA2B421C75D10003CF3FB /* TMPPayment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPayment.h; sourceTree = "<group>"; };
+		CE8FA2B521C75D10003CF3FB /* TMPPayment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPayment.m; sourceTree = "<group>"; };
+		CE8FA2BD21C75E0F003CF3FB /* TMPPaymentAuthViaWebRedirect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentAuthViaWebRedirect.h; sourceTree = "<group>"; };
+		CE8FA2BE21C75E0F003CF3FB /* TMPPaymentAuthViaWebRedirect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentAuthViaWebRedirect.m; sourceTree = "<group>"; };
+		CE8FA2CB21C76422003CF3FB /* TMEndpointAPIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMEndpointAPIRequest.h; sourceTree = "<group>"; };
+		CE8FA2CC21C76423003CF3FB /* TMEndpointService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMEndpointService.h; sourceTree = "<group>"; };
+		CE8FA2CD21C76423003CF3FB /* TMNetworkDataSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNetworkDataSerializer.h; sourceTree = "<group>"; };
+		CE8FA2E321C765A3003CF3FB /* TMNetworkDataFormURLEncodedSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNetworkDataFormURLEncodedSerializer.m; sourceTree = "<group>"; };
+		CE8FA2E421C765A3003CF3FB /* TMNetworkDataJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNetworkDataJSONSerializer.h; sourceTree = "<group>"; };
+		CE8FA2E521C765A4003CF3FB /* TMNetworkDataJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNetworkDataJSONSerializer.m; sourceTree = "<group>"; };
+		CE8FA2E621C765A4003CF3FB /* TMNetworkDataFormURLEncodedSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNetworkDataFormURLEncodedSerializer.h; sourceTree = "<group>"; };
+		CE8FA2EB21C765AE003CF3FB /* TMNetworkConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNetworkConfiguration.h; sourceTree = "<group>"; };
+		CE8FA2EC21C765AE003CF3FB /* TMNetworkConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNetworkConfiguration.m; sourceTree = "<group>"; };
+		CE8FA2F121C765DB003CF3FB /* TMEndpointRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMEndpointRequestOperation.h; sourceTree = "<group>"; };
+		CE8FA2F221C765DC003CF3FB /* TMEndpointRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMEndpointRequestOperation.m; sourceTree = "<group>"; };
+		CE8FA2F521C765E3003CF3FB /* TMNetworkingOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMNetworkingOperationManager.m; sourceTree = "<group>"; };
+		CE8FA2F621C765E3003CF3FB /* TMNetworkingOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMNetworkingOperationManager.h; sourceTree = "<group>"; };
+		CE8FA2F921C765EE003CF3FB /* TMEndpointServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMEndpointServiceImpl.m; sourceTree = "<group>"; };
+		CE8FA2FA21C765EE003CF3FB /* TMEndpointServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMEndpointServiceImpl.h; sourceTree = "<group>"; };
+		CE8FA2FB21C765EE003CF3FB /* TMEndpointAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMEndpointAPIManager.h; sourceTree = "<group>"; };
+		CE8FA2FC21C765EE003CF3FB /* TMEndpointAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMEndpointAPIManager.m; sourceTree = "<group>"; };
+		CE8FA30221C76784003CF3FB /* TMUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMUtils.h; sourceTree = "<group>"; };
+		CE8FA30321C76784003CF3FB /* TMUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMUtils.m; sourceTree = "<group>"; };
+		CE8FA30921C770C4003CF3FB /* TMPSourceEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPSourceEnums.h; sourceTree = "<group>"; };
+		CE8FA30C21C77740003CF3FB /* TMDictionaryConvertible.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDictionaryConvertible.h; sourceTree = "<group>"; };
+		CE8FA31021C78163003CF3FB /* TMPPaymentUIThemeAcceptable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentUIThemeAcceptable.h; sourceTree = "<group>"; };
+		CE8FA31221C781F1003CF3FB /* TMPPaymentUIFullyCustomizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentUIFullyCustomizer.h; sourceTree = "<group>"; };
+		CE8FA31421C78314003CF3FB /* TMPPaymentDefaultUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentDefaultUI.h; sourceTree = "<group>"; };
+		CE8FA31521C78314003CF3FB /* TMPPaymentDefaultUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentDefaultUI.m; sourceTree = "<group>"; };
+		CE8FA32321C877DA003CF3FB /* TMPPaymentAuthorizable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentAuthorizable.h; sourceTree = "<group>"; };
+		CE8FA32621C87998003CF3FB /* TMPConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPConfiguration.h; sourceTree = "<group>"; };
+		CE8FA32721C87998003CF3FB /* TMPConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPConfiguration.m; sourceTree = "<group>"; };
+		CE8FA34321C8C0C0003CF3FB /* TMPSourceParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPSourceParams.h; sourceTree = "<group>"; };
+		CE8FA34421C8C0C0003CF3FB /* TMPSourceParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPSourceParams.m; sourceTree = "<group>"; };
+		CE8FA34821C8D1A1003CF3FB /* TMPSourcePoller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPSourcePoller.h; sourceTree = "<group>"; };
+		CE8FA34921C8D1A1003CF3FB /* TMPSourcePoller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPSourcePoller.m; sourceTree = "<group>"; };
+		CE8FA35421CA25DD003CF3FB /* NSArray+TMFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+TMFExtension.m"; sourceTree = "<group>"; };
+		CE8FA35521CA25DE003CF3FB /* NSArray+TMFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+TMFExtension.h"; sourceTree = "<group>"; };
+		CE8FA35821CA26DD003CF3FB /* NSMutableDictionary+TMFExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+TMFExtension.h"; sourceTree = "<group>"; };
+		CE8FA35921CA26DD003CF3FB /* NSMutableDictionary+TMFExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+TMFExtension.m"; sourceTree = "<group>"; };
+		CE8FA36D21CB7A15003CF3FB /* TMPSourceContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPSourceContext.h; sourceTree = "<group>"; };
+		CE8FA36E21CB7A15003CF3FB /* TMPSourceContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPSourceContext.m; sourceTree = "<group>"; };
+		CE8FA37B21CB911A003CF3FB /* TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.h"; sourceTree = "<group>"; };
+		CE8FA37C21CB911A003CF3FB /* TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.m"; sourceTree = "<group>"; };
+		CE8FA38621D07ED7003CF3FB /* TMPPaymentUICheckoutCounterRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentUICheckoutCounterRenderer.h; sourceTree = "<group>"; };
+		CE8FA38821D07FA4003CF3FB /* TMPPaymentUIPaymentMethodRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentUIPaymentMethodRenderer.h; sourceTree = "<group>"; };
+		CE8FA38E21D0847A003CF3FB /* TMPPaymentUICheckoutCounterLogicResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentUICheckoutCounterLogicResponder.h; sourceTree = "<group>"; };
+		CE8FA39021D08A17003CF3FB /* TMPPaymentUIPaymentMethodLogicResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentUIPaymentMethodLogicResponder.h; sourceTree = "<group>"; };
+		CE8FA39221D08E83003CF3FB /* TMPPaymentMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentMethod.h; sourceTree = "<group>"; };
+		CE8FA39321D08E83003CF3FB /* TMPPaymentMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentMethod.m; sourceTree = "<group>"; };
+		CE8FA3B021D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentDefaultUICheckoutCounterViewController.h; sourceTree = "<group>"; };
+		CE8FA3B121D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentDefaultUICheckoutCounterViewController.m; sourceTree = "<group>"; };
+		CE8FA3B221D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMPPaymentDefaultUICheckoutCounterViewController.xib; sourceTree = "<group>"; };
+		CE8FA3B621D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentDefaultUIPaymentMethodViewController.h; sourceTree = "<group>"; };
+		CE8FA3B721D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentDefaultUIPaymentMethodViewController.m; sourceTree = "<group>"; };
+		CE8FA3B821D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TMPPaymentDefaultUIPaymentMethodViewController.xib; sourceTree = "<group>"; };
+		CE8FA3BE21D0BF10003CF3FB /* TMPPaymentUITheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentUITheme.h; sourceTree = "<group>"; };
+		CE8FA3BF21D0BF10003CF3FB /* TMPPaymentUITheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentUITheme.m; sourceTree = "<group>"; };
+		CE9BF98722642510003C7B78 /* TMPPaymentRequestStatePoller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentRequestStatePoller.h; sourceTree = "<group>"; };
+		CE9BF98822642510003C7B78 /* TMPPaymentRequestStatePoller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentRequestStatePoller.m; sourceTree = "<group>"; };
+		CEBB853C21E2E72B00CAAD7B /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
+		CEBB853F21E3078700CAAD7B /* UIImage+TMPLoadImageFromSDKBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TMPLoadImageFromSDKBundle.h"; sourceTree = "<group>"; };
+		CEBB854021E3078700CAAD7B /* UIImage+TMPLoadImageFromSDKBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TMPLoadImageFromSDKBundle.m"; sourceTree = "<group>"; };
+		CEBB854821E4463B00CAAD7B /* TMLocalizationUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMLocalizationUtils.h; sourceTree = "<group>"; };
+		CEBB854921E4463B00CAAD7B /* TMLocalizationUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMLocalizationUtils.m; sourceTree = "<group>"; };
+		CEBB855021E472BF00CAAD7B /* TMLogService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMLogService.h; sourceTree = "<group>"; };
+		CEBB855121E472BF00CAAD7B /* TMLogService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMLogService.m; sourceTree = "<group>"; };
+		CEBB855621E5C28300CAAD7B /* TMPSourceParams+TMPPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPSourceParams+TMPPrivate.h"; sourceTree = "<group>"; };
+		CEBB855721E5C28300CAAD7B /* TMPSourceParams+TMPPrivate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPSourceParams+TMPPrivate.m"; sourceTree = "<group>"; };
+		CEBB855A21E5C45700CAAD7B /* TMPPaymentSourceParamsProcessable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentSourceParamsProcessable.h; sourceTree = "<group>"; };
+		CEBB855C21E5D66500CAAD7B /* TakeMePay+TMPPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TakeMePay+TMPPrivate.h"; sourceTree = "<group>"; };
+		CEBB855D21E5D66500CAAD7B /* TakeMePay+TMPPrivate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TakeMePay+TMPPrivate.m"; sourceTree = "<group>"; };
+		CEBB856E21E6DA5A00CAAD7B /* TMLoggerEnums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMLoggerEnums.h; sourceTree = "<group>"; };
+		CEBB857421E6DC5600CAAD7B /* TMLogLevelObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMLogLevelObserver.h; sourceTree = "<group>"; };
+		CEBB857721E6E2AC00CAAD7B /* TMLogConsolePrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMLogConsolePrinter.h; sourceTree = "<group>"; };
+		CEBB857821E6E2AC00CAAD7B /* TMLogConsolePrinter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMLogConsolePrinter.m; sourceTree = "<group>"; };
+		CEBB857B21E70A0E00CAAD7B /* TMErrorConvertible.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMErrorConvertible.h; sourceTree = "<group>"; };
+		CEBB857D21E70F6100CAAD7B /* TMLogInformation+TMPErrorConvertible.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMLogInformation+TMPErrorConvertible.h"; sourceTree = "<group>"; };
+		CEBB857E21E70F6100CAAD7B /* TMLogInformation+TMPErrorConvertible.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMLogInformation+TMPErrorConvertible.m"; sourceTree = "<group>"; };
+		CEBB858221E7115F00CAAD7B /* TMPRemoteLogReporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPRemoteLogReporter.h; sourceTree = "<group>"; };
+		CEBB858321E7115F00CAAD7B /* TMPRemoteLogReporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPRemoteLogReporter.m; sourceTree = "<group>"; };
+		CEBB858D21E73D5400CAAD7B /* _TMPPaymentLogInformationInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _TMPPaymentLogInformationInterceptor.h; sourceTree = "<group>"; };
+		CEBB858E21E73D5400CAAD7B /* _TMPPaymentLogInformationInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _TMPPaymentLogInformationInterceptor.m; sourceTree = "<group>"; };
+		CEBB85A921E82CD000CAAD7B /* UILabel+TMPLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+TMPLocalization.h"; sourceTree = "<group>"; };
+		CEBB85AA21E82CD000CAAD7B /* UILabel+TMPLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TMPLocalization.m"; sourceTree = "<group>"; };
+		CEBB85AD21E82EF900CAAD7B /* UIButton+TMPLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+TMPLocalization.h"; sourceTree = "<group>"; };
+		CEBB85AE21E82EF900CAAD7B /* UIButton+TMPLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TMPLocalization.m"; sourceTree = "<group>"; };
+		CEBB85C121E854D100CAAD7B /* PaymentIcons.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PaymentIcons.plist; sourceTree = "<group>"; };
+		CECF1124225C8CA00008E7E7 /* TMPSource+TMPPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPSource+TMPPrivate.h"; sourceTree = "<group>"; };
+		CECF1125225C8CA00008E7E7 /* TMPSource+TMPPrivate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPSource+TMPPrivate.m"; sourceTree = "<group>"; };
+		CED5FADD21D2637E006F5839 /* TakeMePay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TakeMePay.h; sourceTree = "<group>"; };
+		CED5FADE21D2637E006F5839 /* TakeMePay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TakeMePay.m; sourceTree = "<group>"; };
+		CED5FAE821D4AED7006F5839 /* TMPPaymentServiceClient+TMPPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPPaymentServiceClient+TMPPrivate.h"; sourceTree = "<group>"; };
+		CED5FAE921D4AED7006F5839 /* TMPPaymentServiceClient+TMPPrivate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPPaymentServiceClient+TMPPrivate.m"; sourceTree = "<group>"; };
+		CED5FAF121D5C0EC006F5839 /* NSError+TMPErrorGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+TMPErrorGenerator.h"; sourceTree = "<group>"; };
+		CED5FAF221D5C0EC006F5839 /* NSError+TMPErrorGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+TMPErrorGenerator.m"; sourceTree = "<group>"; };
+		CED5FB3C21DC3D39006F5839 /* TMPPaymentVCPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentVCPresenter.h; sourceTree = "<group>"; };
+		CED5FB3F21DC3EA5006F5839 /* TMPDefaultPaymentVCPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPDefaultPaymentVCPresenter.h; sourceTree = "<group>"; };
+		CED5FB4021DC3EA5006F5839 /* TMPDefaultPaymentVCPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPDefaultPaymentVCPresenter.m; sourceTree = "<group>"; };
+		CED5FB8B21DC89A2006F5839 /* TMPDefaultPaymentPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPDefaultPaymentPresentationController.h; sourceTree = "<group>"; };
+		CED5FB8C21DC89A2006F5839 /* TMPDefaultPaymentPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPDefaultPaymentPresentationController.m; sourceTree = "<group>"; };
+		CEEC127621F69C1700D393B1 /* TMPPayment+TMPPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TMPPayment+TMPPrivate.h"; sourceTree = "<group>"; };
+		CEEC127721F69C1700D393B1 /* TMPPayment+TMPPrivate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TMPPayment+TMPPrivate.m"; sourceTree = "<group>"; };
+		CEEC128821F6EEC000D393B1 /* NSDictionary+TMPExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TMPExtension.h"; sourceTree = "<group>"; };
+		CEEC128921F6EEC000D393B1 /* NSDictionary+TMPExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TMPExtension.m"; sourceTree = "<group>"; };
+		CEEC129321F6F43400D393B1 /* TMPPaymentMethodRegisterSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPPaymentMethodRegisterSupport.h; sourceTree = "<group>"; };
+		CEEC129421F6F43400D393B1 /* TMPPaymentMethodRegisterSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPPaymentMethodRegisterSupport.m; sourceTree = "<group>"; };
+		CEED40F12201853E00A593B1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CEED40F32201858C00A593B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CEED40F5220185A800A593B1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CEED40F72201861900A593B1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		CEF09437226479AE00FACDC2 /* TakeMePayWeChatPaySupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TakeMePayWeChatPaySupport.xcodeproj; path = ../../takemepay_sdk_ios_wechat_pay_support/TakeMePayWeChatPaySupport.xcodeproj; sourceTree = "<group>"; };
+		CEFC5138228BDF8500A0618F /* _TMPPaymentClosureSupportInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _TMPPaymentClosureSupportInterceptor.h; sourceTree = "<group>"; };
+		CEFC5139228BDF8500A0618F /* _TMPPaymentClosureSupportInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _TMPPaymentClosureSupportInterceptor.m; sourceTree = "<group>"; };
+		CEFC513F228BF28900A0618F /* TMPTestSourceParamsPreparer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPTestSourceParamsPreparer.h; sourceTree = "<group>"; };
+		CEFC5140228BF28900A0618F /* TMPTestSourceParamsPreparer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPTestSourceParamsPreparer.m; sourceTree = "<group>"; };
+		CEFC5142228BF2A500A0618F /* TMPTestPaymentMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMPTestPaymentMethod.h; sourceTree = "<group>"; };
+		CEFC5143228BF2A500A0618F /* TMPTestPaymentMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMPTestPaymentMethod.m; sourceTree = "<group>"; };
+		CEFC5196228E432D00A0618F /* CoffeeDelivery.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoffeeDelivery.xcodeproj; path = ../../takemepay_sdk_ios_demo/TakeMePaySDKDemo/CoffeeDelivery.xcodeproj; sourceTree = "<group>"; };
+		EE506AB9A47BB81F62541AD5 /* Pods-TakeMePaySDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakeMePaySDKTests.release.xcconfig"; path = "Target Support Files/Pods-TakeMePaySDKTests/Pods-TakeMePaySDKTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE8FA27A21C74563003CF3FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8FA28321C74564003CF3FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8FA28721C74564003CF3FB /* TakeMePaySDK.framework in Frameworks */,
+				52FA76DB9019330D349B7C57 /* Pods_TakeMePaySDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		543BC6C6ECD70F79AB0BB3EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3162115E1D55300ACA6A58EB /* Pods-TakeMePaySDKTests.debug.xcconfig */,
+				EE506AB9A47BB81F62541AD5 /* Pods-TakeMePaySDKTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE097E9F21DDAC1C009CF715 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				CE097EA021DDAC29009CF715 /* TMImageLoader.h */,
+				CE097EA121DDAC29009CF715 /* TMImageLoader.m */,
+			);
+			path = ImageLoader;
+			sourceTree = "<group>";
+		};
+		CE097EB121DE07EA009CF715 /* PaymentMethodItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE097EB221DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.h */,
+				CE097EB321DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.m */,
+				CE097EB421DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.xib */,
+			);
+			path = PaymentMethodItemCell;
+			sourceTree = "<group>";
+		};
+		CE097EB821DEE227009CF715 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA3C321D0C3B6003CF3FB /* PaymentMethod */,
+				CE8FA3C221D0C3A8003CF3FB /* CheckoutCounter */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE097EB921DEE24C009CF715 /* ViewControllerAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				CE097EBA21DEE289009CF715 /* TMPDefaultPaymentAnimator.h */,
+				CE097EBB21DEE289009CF715 /* TMPDefaultPaymentAnimator.m */,
+			);
+			path = ViewControllerAnimator;
+			sourceTree = "<group>";
+		};
+		CE20C5042251E44A00CDBB21 /* Alipay */ = {
+			isa = PBXGroup;
+			children = (
+				CE20C50C2251E4E700CDBB21 /* TMPPaymentAlipay.h */,
+				CE20C50D2251E4E700CDBB21 /* TMPPaymentAlipay.m */,
+			);
+			path = Alipay;
+			sourceTree = "<group>";
+		};
+		CE252C1621EDB323005D0616 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				CE252C1721EDB376005D0616 /* TMDeviceInfo.h */,
+				CE252C1821EDB376005D0616 /* TMDeviceInfo.m */,
+				CE252C1B21EDBC68005D0616 /* TMPReachability.h */,
+				CE252C1C21EDBC68005D0616 /* TMPReachability.m */,
+			);
+			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		CE252C1F21F01317005D0616 /* SourceParamsPreparer */ = {
+			isa = PBXGroup;
+			children = (
+				CE815C1722607DA80085FF3A /* TMPPaymentSourceParamsPreparer.h */,
+			);
+			path = SourceParamsPreparer;
+			sourceTree = "<group>";
+		};
+		CE252C3321F55225005D0616 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA39221D08E83003CF3FB /* TMPPaymentMethod.h */,
+				CE8FA39321D08E83003CF3FB /* TMPPaymentMethod.m */,
+				CE252C3921F55999005D0616 /* TMPPaymentMethod+TMPPrivate.h */,
+				CE252C3A21F55999005D0616 /* TMPPaymentMethod+TMPPrivate.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE2C33C02228C65100088924 /* RemoteLogPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C33C42228C68A00088924 /* TMPRemoteLogPersistenceStrategy.h */,
+			);
+			path = RemoteLogPersistence;
+			sourceTree = "<group>";
+		};
+		CE2C33C62228CA0500088924 /* PersistenceStrategy */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C33C72228CA3800088924 /* TMPRemoteLogPersistenceItemCountsStrategy.h */,
+				CE2C33C82228CA3800088924 /* TMPRemoteLogPersistenceItemCountsStrategy.m */,
+			);
+			path = PersistenceStrategy;
+			sourceTree = "<group>";
+		};
+		CE2C33D1222CEEAC00088924 /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C33D5222CEEC400088924 /* TMPCrashReporter.h */,
+				CE2C33D6222CEEC400088924 /* TMPCrashReporter.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		CE8FA27321C74563003CF3FB = {
+			isa = PBXGroup;
+			children = (
+				CEFC5196228E432D00A0618F /* CoffeeDelivery.xcodeproj */,
+				CEF09437226479AE00FACDC2 /* TakeMePayWeChatPaySupport.xcodeproj */,
+				CE8FA27F21C74563003CF3FB /* TakeMePaySDK */,
+				CE8FA28A21C74564003CF3FB /* TakeMePaySDKTests */,
+				CE8FA27E21C74563003CF3FB /* Products */,
+				CED5FB7921DC4470006F5839 /* Frameworks */,
+				543BC6C6ECD70F79AB0BB3EA /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		CE8FA27E21C74563003CF3FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA27D21C74563003CF3FB /* TakeMePaySDK.framework */,
+				CE8FA28621C74564003CF3FB /* TakeMePaySDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE8FA27F21C74563003CF3FB /* TakeMePaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA29A21C745E5003CF3FB /* Foundation */,
+				CE8FA30621C76A7E003CF3FB /* BusinessFoundation */,
+				CEEC127A21F6A5E400D393B1 /* BuildInPlugins */,
+				CE8FA29D21C7460A003CF3FB /* Payment */,
+				CE8FA29721C745CE003CF3FB /* Source */,
+				CEBB858A21E713BA00CAAD7B /* SourceTypes */,
+				CEBB853B21E2E6FF00CAAD7B /* Resource */,
+				CE8FA28021C74563003CF3FB /* TakeMePaySDK.h */,
+				CE8FA28121C74563003CF3FB /* Info.plist */,
+			);
+			path = TakeMePaySDK;
+			sourceTree = "<group>";
+		};
+		CE8FA28A21C74564003CF3FB /* TakeMePaySDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC513E228BF26F00A0618F /* PaymentMethod */,
+				CEFC513D228BF25C00A0618F /* SourceParamsPreparer */,
+				CE8FA28B21C74564003CF3FB /* TakeMePaySDKTests.m */,
+				CE8FA28D21C74564003CF3FB /* Info.plist */,
+			);
+			path = TakeMePaySDKTests;
+			sourceTree = "<group>";
+		};
+		CE8FA29721C745CE003CF3FB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA33C21C8BEB1003CF3FB /* RequestParams */,
+				CE8FA30921C770C4003CF3FB /* TMPSourceEnums.h */,
+				CE252C2D21F19294005D0616 /* TMPSourceTypeConstants.h */,
+				CE8FA2A821C75C7C003CF3FB /* TMPSource.h */,
+				CE8FA2A921C75C7C003CF3FB /* TMPSource.m */,
+				CECF1124225C8CA00008E7E7 /* TMPSource+TMPPrivate.h */,
+				CECF1125225C8CA00008E7E7 /* TMPSource+TMPPrivate.m */,
+				CE8FA36D21CB7A15003CF3FB /* TMPSourceContext.h */,
+				CE8FA36E21CB7A15003CF3FB /* TMPSourceContext.m */,
+				CE252C0F21ED729C005D0616 /* TMPSourceContext+TMPPrivate.h */,
+				CE252C1021ED729C005D0616 /* TMPSourceContext+TMPPrivate.m */,
+				CE8FA37B21CB911A003CF3FB /* TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.h */,
+				CE8FA37C21CB911A003CF3FB /* TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CE8FA29921C745DB003CF3FB /* PaymentServiceClient */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA2B021C75CB6003CF3FB /* TMPPaymentServiceClient.h */,
+				CE8FA2B121C75CB6003CF3FB /* TMPPaymentServiceClient.m */,
+				CED5FAE821D4AED7006F5839 /* TMPPaymentServiceClient+TMPPrivate.h */,
+				CED5FAE921D4AED7006F5839 /* TMPPaymentServiceClient+TMPPrivate.m */,
+			);
+			path = PaymentServiceClient;
+			sourceTree = "<group>";
+		};
+		CE8FA29A21C745E5003CF3FB /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB854721E4457E00CAAD7B /* Localizations */,
+				CE097E9F21DDAC1C009CF715 /* ImageLoader */,
+				CE8FA35C21CB1FB1003CF3FB /* Logger */,
+				CE8FA35321CA2587003CF3FB /* Category */,
+				CE8FA30B21C776F8003CF3FB /* CommonProtocol */,
+				CE8FA30121C76779003CF3FB /* Utils */,
+				CE8FA2A021C75B73003CF3FB /* Network */,
+				CE252C1621EDB323005D0616 /* DeviceInfo */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		CE8FA29B21C745EB003CF3FB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C33C02228C65100088924 /* RemoteLogPersistence */,
+				CEED40F92203E56900A593B1 /* PaymentMethod */,
+				CE8FA31E21C798A2003CF3FB /* Payment */,
+				CE8FA31D21C7988E003CF3FB /* PaymentUI */,
+				CE8FA31B21C7986C003CF3FB /* Source */,
+				CE8FA31A21C7985E003CF3FB /* PaymentLifeCycle */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CE8FA29C21C745F6003CF3FB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CE097EB821DEE227009CF715 /* ViewController */,
+				CED5FB3E21DC3E72006F5839 /* ViewControllerPresenter */,
+				CE097EB921DEE24C009CF715 /* ViewControllerAnimator */,
+				CE8FA3BE21D0BF10003CF3FB /* TMPPaymentUITheme.h */,
+				CE8FA3BF21D0BF10003CF3FB /* TMPPaymentUITheme.m */,
+				CE8FA31421C78314003CF3FB /* TMPPaymentDefaultUI.h */,
+				CE8FA31521C78314003CF3FB /* TMPPaymentDefaultUI.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CE8FA29D21C7460A003CF3FB /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC5131228BDF5200A0618F /* ClosureSupportInterceptor */,
+				CE252C1F21F01317005D0616 /* SourceParamsPreparer */,
+				CEBB858C21E73D3A00CAAD7B /* LogInformationInterceptor */,
+				CED5FAE321D30A4B006F5839 /* PaymentBehaviour */,
+				CE252C1421ED79CE005D0616 /* TMPPaymentEnums.h */,
+				CE8FA2B421C75D10003CF3FB /* TMPPayment.h */,
+				CE8FA2B521C75D10003CF3FB /* TMPPayment.m */,
+				CEEC127621F69C1700D393B1 /* TMPPayment+TMPPrivate.h */,
+				CEEC127721F69C1700D393B1 /* TMPPayment+TMPPrivate.m */,
+				CE37A92B228AB7930049C71A /* TMPPayment+TMPClosureSupport.h */,
+				CE37A92C228AB7930049C71A /* TMPPayment+TMPClosureSupport.m */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		CE8FA2A021C75B73003CF3FB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA2FB21C765EE003CF3FB /* TMEndpointAPIManager.h */,
+				CE8FA2FC21C765EE003CF3FB /* TMEndpointAPIManager.m */,
+				CE8FA2FA21C765EE003CF3FB /* TMEndpointServiceImpl.h */,
+				CE8FA2F921C765EE003CF3FB /* TMEndpointServiceImpl.m */,
+				CE8FA2CA21C763FA003CF3FB /* Protocol */,
+				CE8FA2E221C76595003CF3FB /* Serializer */,
+				CE8FA2E021C7652E003CF3FB /* Operation */,
+				CE8FA2DF21C76525003CF3FB /* Configuration */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CE8FA2B821C75D16003CF3FB /* WebRedirect */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA2BD21C75E0F003CF3FB /* TMPPaymentAuthViaWebRedirect.h */,
+				CE8FA2BE21C75E0F003CF3FB /* TMPPaymentAuthViaWebRedirect.m */,
+			);
+			path = WebRedirect;
+			sourceTree = "<group>";
+		};
+		CE8FA2CA21C763FA003CF3FB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA2CB21C76422003CF3FB /* TMEndpointAPIRequest.h */,
+				CE8FA2CC21C76423003CF3FB /* TMEndpointService.h */,
+				CE8FA2CD21C76423003CF3FB /* TMNetworkDataSerializer.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CE8FA2DF21C76525003CF3FB /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA2EB21C765AE003CF3FB /* TMNetworkConfiguration.h */,
+				CE8FA2EC21C765AE003CF3FB /* TMNetworkConfiguration.m */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CE8FA2E021C7652E003CF3FB /* Operation */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA2F021C765D1003CF3FB /* Endpoint */,
+				CE8FA2F621C765E3003CF3FB /* TMNetworkingOperationManager.h */,
+				CE8FA2F521C765E3003CF3FB /* TMNetworkingOperationManager.m */,
+			);
+			path = Operation;
+			sourceTree = "<group>";
+		};
+		CE8FA2E221C76595003CF3FB /* Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA2E421C765A3003CF3FB /* TMNetworkDataJSONSerializer.h */,
+				CE8FA2E521C765A4003CF3FB /* TMNetworkDataJSONSerializer.m */,
+				CE8FA2E621C765A4003CF3FB /* TMNetworkDataFormURLEncodedSerializer.h */,
+				CE8FA2E321C765A3003CF3FB /* TMNetworkDataFormURLEncodedSerializer.m */,
+			);
+			path = Serializer;
+			sourceTree = "<group>";
+		};
+		CE8FA2F021C765D1003CF3FB /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA2F121C765DB003CF3FB /* TMEndpointRequestOperation.h */,
+				CE8FA2F221C765DC003CF3FB /* TMEndpointRequestOperation.m */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		CE8FA30121C76779003CF3FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA30221C76784003CF3FB /* TMUtils.h */,
+				CE8FA30321C76784003CF3FB /* TMUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CE8FA30621C76A7E003CF3FB /* BusinessFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				CE252C0921ECCA33005D0616 /* TMPSDKConstants.h */,
+				CED5FADD21D2637E006F5839 /* TakeMePay.h */,
+				CED5FADE21D2637E006F5839 /* TakeMePay.m */,
+				CE8FA32621C87998003CF3FB /* TMPConfiguration.h */,
+				CE8FA32721C87998003CF3FB /* TMPConfiguration.m */,
+				CE2C33D1222CEEAC00088924 /* Crash */,
+				CEEC129221F6F41400D393B1 /* PluginRegisterSupport */,
+				CED5FAF021D5C0A2006F5839 /* ErrorGenerator */,
+				CED5FADC21D26355006F5839 /* HandleUrl */,
+				CEBB858121E7110300CAAD7B /* Logger */,
+				CE8FA34721C8D01F003CF3FB /* Polling */,
+				CEBB853E21E3073F00CAAD7B /* Category */,
+				CE8FA29921C745DB003CF3FB /* PaymentServiceClient */,
+				CE8FA29B21C745EB003CF3FB /* Protocol */,
+			);
+			path = BusinessFoundation;
+			sourceTree = "<group>";
+		};
+		CE8FA30B21C776F8003CF3FB /* CommonProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA30C21C77740003CF3FB /* TMDictionaryConvertible.h */,
+			);
+			path = CommonProtocol;
+			sourceTree = "<group>";
+		};
+		CE8FA31A21C7985E003CF3FB /* PaymentLifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA2A621C75BEE003CF3FB /* TMPPaymentDelegate.h */,
+			);
+			path = PaymentLifeCycle;
+			sourceTree = "<group>";
+		};
+		CE8FA31B21C7986C003CF3FB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CE8FA31D21C7988E003CF3FB /* PaymentUI */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA38521D07E81003CF3FB /* FullyCustomize */,
+				CE8FA31021C78163003CF3FB /* TMPPaymentUIThemeAcceptable.h */,
+			);
+			path = PaymentUI;
+			sourceTree = "<group>";
+		};
+		CE8FA31E21C798A2003CF3FB /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA32321C877DA003CF3FB /* TMPPaymentAuthorizable.h */,
+				CED5FB3C21DC3D39006F5839 /* TMPPaymentVCPresenter.h */,
+				CEBB855A21E5C45700CAAD7B /* TMPPaymentSourceParamsProcessable.h */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		CE8FA33C21C8BEB1003CF3FB /* RequestParams */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA34321C8C0C0003CF3FB /* TMPSourceParams.h */,
+				CE8FA34421C8C0C0003CF3FB /* TMPSourceParams.m */,
+				CEBB855621E5C28300CAAD7B /* TMPSourceParams+TMPPrivate.h */,
+				CEBB855721E5C28300CAAD7B /* TMPSourceParams+TMPPrivate.m */,
+			);
+			path = RequestParams;
+			sourceTree = "<group>";
+		};
+		CE8FA34721C8D01F003CF3FB /* Polling */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA34821C8D1A1003CF3FB /* TMPSourcePoller.h */,
+				CE8FA34921C8D1A1003CF3FB /* TMPSourcePoller.m */,
+				CE9BF98722642510003C7B78 /* TMPPaymentRequestStatePoller.h */,
+				CE9BF98822642510003C7B78 /* TMPPaymentRequestStatePoller.m */,
+			);
+			path = Polling;
+			sourceTree = "<group>";
+		};
+		CE8FA35321CA2587003CF3FB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA35521CA25DE003CF3FB /* NSArray+TMFExtension.h */,
+				CE8FA35421CA25DD003CF3FB /* NSArray+TMFExtension.m */,
+				CE8FA35821CA26DD003CF3FB /* NSMutableDictionary+TMFExtension.h */,
+				CE8FA35921CA26DD003CF3FB /* NSMutableDictionary+TMFExtension.m */,
+				CE097EA421DDACB0009CF715 /* UIImageView+TMDownLoadImage.h */,
+				CE097EA521DDACB0009CF715 /* UIImageView+TMDownLoadImage.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CE8FA35C21CB1FB1003CF3FB /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB857421E6DC5600CAAD7B /* TMLogLevelObserver.h */,
+				CEBB856E21E6DA5A00CAAD7B /* TMLoggerEnums.h */,
+				CEBB857B21E70A0E00CAAD7B /* TMErrorConvertible.h */,
+				CEBB855021E472BF00CAAD7B /* TMLogService.h */,
+				CEBB855121E472BF00CAAD7B /* TMLogService.m */,
+				CEBB857621E6E18400CAAD7B /* Build-in Observer */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		CE8FA38521D07E81003CF3FB /* FullyCustomize */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA31221C781F1003CF3FB /* TMPPaymentUIFullyCustomizer.h */,
+				CE8FA38A21D081A1003CF3FB /* CheckoutCounter */,
+				CE8FA38B21D081B7003CF3FB /* PaymentMethod */,
+			);
+			path = FullyCustomize;
+			sourceTree = "<group>";
+		};
+		CE8FA38A21D081A1003CF3FB /* CheckoutCounter */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA38621D07ED7003CF3FB /* TMPPaymentUICheckoutCounterRenderer.h */,
+				CE8FA38E21D0847A003CF3FB /* TMPPaymentUICheckoutCounterLogicResponder.h */,
+			);
+			path = CheckoutCounter;
+			sourceTree = "<group>";
+		};
+		CE8FA38B21D081B7003CF3FB /* PaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA38821D07FA4003CF3FB /* TMPPaymentUIPaymentMethodRenderer.h */,
+				CE8FA39021D08A17003CF3FB /* TMPPaymentUIPaymentMethodLogicResponder.h */,
+			);
+			path = PaymentMethod;
+			sourceTree = "<group>";
+		};
+		CE8FA3C221D0C3A8003CF3FB /* CheckoutCounter */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA3B021D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.h */,
+				CE8FA3B121D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.m */,
+				CE8FA3B221D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.xib */,
+			);
+			path = CheckoutCounter;
+			sourceTree = "<group>";
+		};
+		CE8FA3C321D0C3B6003CF3FB /* PaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				CE097EB121DE07EA009CF715 /* PaymentMethodItemCell */,
+				CE8FA3B621D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.h */,
+				CE8FA3B721D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.m */,
+				CE8FA3B821D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.xib */,
+				CE252C2F21F54FC2005D0616 /* TMPPaymentMethodItem+TMPUIInfo.h */,
+				CE252C3021F54FC2005D0616 /* TMPPaymentMethodItem+TMPUIInfo.m */,
+			);
+			path = PaymentMethod;
+			sourceTree = "<group>";
+		};
+		CEBB853B21E2E6FF00CAAD7B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CE3EDA4F227D447900E30C11 /* Localizable.strings */,
+				CEBB853C21E2E72B00CAAD7B /* Resources.xcassets */,
+				CEBB85C121E854D100CAAD7B /* PaymentIcons.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CEBB853E21E3073F00CAAD7B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB853F21E3078700CAAD7B /* UIImage+TMPLoadImageFromSDKBundle.h */,
+				CEBB854021E3078700CAAD7B /* UIImage+TMPLoadImageFromSDKBundle.m */,
+				CEBB85A921E82CD000CAAD7B /* UILabel+TMPLocalization.h */,
+				CEBB85AA21E82CD000CAAD7B /* UILabel+TMPLocalization.m */,
+				CEBB85AD21E82EF900CAAD7B /* UIButton+TMPLocalization.h */,
+				CEBB85AE21E82EF900CAAD7B /* UIButton+TMPLocalization.m */,
+				CEEC128821F6EEC000D393B1 /* NSDictionary+TMPExtension.h */,
+				CEEC128921F6EEC000D393B1 /* NSDictionary+TMPExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CEBB854721E4457E00CAAD7B /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB854821E4463B00CAAD7B /* TMLocalizationUtils.h */,
+				CEBB854921E4463B00CAAD7B /* TMLocalizationUtils.m */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		CEBB857621E6E18400CAAD7B /* Build-in Observer */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB857721E6E2AC00CAAD7B /* TMLogConsolePrinter.h */,
+				CEBB857821E6E2AC00CAAD7B /* TMLogConsolePrinter.m */,
+			);
+			path = "Build-in Observer";
+			sourceTree = "<group>";
+		};
+		CEBB858121E7110300CAAD7B /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C33C62228CA0500088924 /* PersistenceStrategy */,
+				CEBB858221E7115F00CAAD7B /* TMPRemoteLogReporter.h */,
+				CEBB858321E7115F00CAAD7B /* TMPRemoteLogReporter.m */,
+				CE2C33CB222BC76A00088924 /* TMPRemoteLogInfo+TMPPrivate.h */,
+				CE2C33CC222BC76A00088924 /* TMPRemoteLogInfo+TMPPrivate.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		CEBB858A21E713BA00CAAD7B /* SourceTypes */ = {
+			isa = PBXGroup;
+			children = (
+				CE252C3321F55225005D0616 /* Model */,
+				CEBB858B21E713CE00CAAD7B /* RequestParams */,
+				CE32AAB622656C9D00A95D0A /* TMPSourceTypesContext.h */,
+				CE32AAB722656C9D00A95D0A /* TMPSourceTypesContext.m */,
+				CE097EAD21DDC9AF009CF715 /* TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.h */,
+				CE097EAE21DDC9AF009CF715 /* TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.m */,
+			);
+			path = SourceTypes;
+			sourceTree = "<group>";
+		};
+		CEBB858B21E713CE00CAAD7B /* RequestParams */ = {
+			isa = PBXGroup;
+			children = (
+				CE097EA921DDC958009CF715 /* TMPSourceTypeListParams.h */,
+				CE097EAA21DDC958009CF715 /* TMPSourceTypeListParams.m */,
+			);
+			path = RequestParams;
+			sourceTree = "<group>";
+		};
+		CEBB858C21E73D3A00CAAD7B /* LogInformationInterceptor */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB858D21E73D5400CAAD7B /* _TMPPaymentLogInformationInterceptor.h */,
+				CEBB858E21E73D5400CAAD7B /* _TMPPaymentLogInformationInterceptor.m */,
+			);
+			path = LogInformationInterceptor;
+			sourceTree = "<group>";
+		};
+		CED5FADC21D26355006F5839 /* HandleUrl */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB855C21E5D66500CAAD7B /* TakeMePay+TMPPrivate.h */,
+				CEBB855D21E5D66500CAAD7B /* TakeMePay+TMPPrivate.m */,
+			);
+			path = HandleUrl;
+			sourceTree = "<group>";
+		};
+		CED5FAE321D30A4B006F5839 /* PaymentBehaviour */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PaymentBehaviour;
+			sourceTree = "<group>";
+		};
+		CED5FAF021D5C0A2006F5839 /* ErrorGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				CED5FAF121D5C0EC006F5839 /* NSError+TMPErrorGenerator.h */,
+				CED5FAF221D5C0EC006F5839 /* NSError+TMPErrorGenerator.m */,
+				CEBB857D21E70F6100CAAD7B /* TMLogInformation+TMPErrorConvertible.h */,
+				CEBB857E21E70F6100CAAD7B /* TMLogInformation+TMPErrorConvertible.m */,
+			);
+			path = ErrorGenerator;
+			sourceTree = "<group>";
+		};
+		CED5FB3E21DC3E72006F5839 /* ViewControllerPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				CED5FB8621DC8943006F5839 /* PresentationController */,
+				CED5FB3F21DC3EA5006F5839 /* TMPDefaultPaymentVCPresenter.h */,
+				CED5FB4021DC3EA5006F5839 /* TMPDefaultPaymentVCPresenter.m */,
+			);
+			path = ViewControllerPresenter;
+			sourceTree = "<group>";
+		};
+		CED5FB7921DC4470006F5839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEED40F72201861900A593B1 /* libc++.tbd */,
+				CEED40F5220185A800A593B1 /* libz.tbd */,
+				CEED40F32201858C00A593B1 /* Security.framework */,
+				CEED40F12201853E00A593B1 /* libsqlite3.tbd */,
+				732FE41A96265F99FF0EB23C /* Pods_TakeMePaySDKTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CED5FB8621DC8943006F5839 /* PresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				CED5FB8B21DC89A2006F5839 /* TMPDefaultPaymentPresentationController.h */,
+				CED5FB8C21DC89A2006F5839 /* TMPDefaultPaymentPresentationController.m */,
+			);
+			path = PresentationController;
+			sourceTree = "<group>";
+		};
+		CEEC127A21F6A5E400D393B1 /* BuildInPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC128721F6ED4000D393B1 /* PaymentMethods */,
+				CEEC128621F6ED3800D393B1 /* PaymentAuthServiceImpls */,
+				CEEC127B21F6A5F900D393B1 /* SourceParamsPreparer */,
+			);
+			path = BuildInPlugins;
+			sourceTree = "<group>";
+		};
+		CEEC127B21F6A5F900D393B1 /* SourceParamsPreparer */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC132421F7EF8800D393B1 /* DefaultPerparer */,
+			);
+			path = SourceParamsPreparer;
+			sourceTree = "<group>";
+		};
+		CEEC128621F6ED3800D393B1 /* PaymentAuthServiceImpls */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA2B821C75D16003CF3FB /* WebRedirect */,
+			);
+			path = PaymentAuthServiceImpls;
+			sourceTree = "<group>";
+		};
+		CEEC128721F6ED4000D393B1 /* PaymentMethods */ = {
+			isa = PBXGroup;
+			children = (
+				CE20C5042251E44A00CDBB21 /* Alipay */,
+			);
+			path = PaymentMethods;
+			sourceTree = "<group>";
+		};
+		CEEC129221F6F41400D393B1 /* PluginRegisterSupport */ = {
+			isa = PBXGroup;
+			children = (
+				CEEC129321F6F43400D393B1 /* TMPPaymentMethodRegisterSupport.h */,
+				CEEC129421F6F43400D393B1 /* TMPPaymentMethodRegisterSupport.m */,
+			);
+			path = PluginRegisterSupport;
+			sourceTree = "<group>";
+		};
+		CEEC132421F7EF8800D393B1 /* DefaultPerparer */ = {
+			isa = PBXGroup;
+			children = (
+				CE8FA29C21C745F6003CF3FB /* UI */,
+				CE252C2921F054F6005D0616 /* TMPUIPaymentSourceParamsPreparer.h */,
+				CE252C2A21F054F6005D0616 /* TMPUIPaymentSourceParamsPreparer.m */,
+			);
+			path = DefaultPerparer;
+			sourceTree = "<group>";
+		};
+		CEED40F92203E56900A593B1 /* PaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				CE8631F02215006300C78BBA /* TMPURLListener.h */,
+			);
+			path = PaymentMethod;
+			sourceTree = "<group>";
+		};
+		CEF09438226479AE00FACDC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF09441226479AE00FACDC2 /* TakeMePayWeChatPaySupport.framework */,
+				CEF09443226479AE00FACDC2 /* TakeMePayWeChatPaySupportTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEFC5131228BDF5200A0618F /* ClosureSupportInterceptor */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC5138228BDF8500A0618F /* _TMPPaymentClosureSupportInterceptor.h */,
+				CEFC5139228BDF8500A0618F /* _TMPPaymentClosureSupportInterceptor.m */,
+			);
+			path = ClosureSupportInterceptor;
+			sourceTree = "<group>";
+		};
+		CEFC513D228BF25C00A0618F /* SourceParamsPreparer */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC513F228BF28900A0618F /* TMPTestSourceParamsPreparer.h */,
+				CEFC5140228BF28900A0618F /* TMPTestSourceParamsPreparer.m */,
+			);
+			path = SourceParamsPreparer;
+			sourceTree = "<group>";
+		};
+		CEFC513E228BF26F00A0618F /* PaymentMethod */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC5142228BF2A500A0618F /* TMPTestPaymentMethod.h */,
+				CEFC5143228BF2A500A0618F /* TMPTestPaymentMethod.m */,
+			);
+			path = PaymentMethod;
+			sourceTree = "<group>";
+		};
+		CEFC5197228E432D00A0618F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC519D228E432E00A0618F /* CoffeeDelivery.app */,
+				CEFC519F228E432E00A0618F /* CoffeeDeliveryTests.xctest */,
+				CEFC51A1228E432E00A0618F /* CoffeeDeliveryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CE8FA27821C74563003CF3FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBB85AF21E82EF900CAAD7B /* UIButton+TMPLocalization.h in Headers */,
+				CE8FA2AA21C75C7C003CF3FB /* TMPSource.h in Headers */,
+				CE8FA2A721C75BEE003CF3FB /* TMPPaymentDelegate.h in Headers */,
+				CE8631F12215006300C78BBA /* TMPURLListener.h in Headers */,
+				CE8FA32821C87998003CF3FB /* TMPConfiguration.h in Headers */,
+				CEBB856F21E6DA5A00CAAD7B /* TMLoggerEnums.h in Headers */,
+				CEBB858F21E73D5400CAAD7B /* _TMPPaymentLogInformationInterceptor.h in Headers */,
+				CE097EBC21DEE289009CF715 /* TMPDefaultPaymentAnimator.h in Headers */,
+				CEFC513A228BDF8500A0618F /* _TMPPaymentClosureSupportInterceptor.h in Headers */,
+				CEBB857C21E70A0E00CAAD7B /* TMErrorConvertible.h in Headers */,
+				CE8FA31121C78163003CF3FB /* TMPPaymentUIThemeAcceptable.h in Headers */,
+				CE252C3121F54FC2005D0616 /* TMPPaymentMethodItem+TMPUIInfo.h in Headers */,
+				CE8FA2B621C75D10003CF3FB /* TMPPayment.h in Headers */,
+				CED5FB8121DC4920006F5839 /* TMPSourceEnums.h in Headers */,
+				CE097EB521DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.h in Headers */,
+				CE8FA34521C8C0C0003CF3FB /* TMPSourceParams.h in Headers */,
+				CEBB85AB21E82CD100CAAD7B /* UILabel+TMPLocalization.h in Headers */,
+				CEBB854121E3078700CAAD7B /* UIImage+TMPLoadImageFromSDKBundle.h in Headers */,
+				CE8FA38921D07FA4003CF3FB /* TMPPaymentUIPaymentMethodRenderer.h in Headers */,
+				CE8FA38721D07ED7003CF3FB /* TMPPaymentUICheckoutCounterRenderer.h in Headers */,
+				CE8FA38F21D0847A003CF3FB /* TMPPaymentUICheckoutCounterLogicResponder.h in Headers */,
+				CECF1126225C8CA00008E7E7 /* TMPSource+TMPPrivate.h in Headers */,
+				CE2C33C92228CA3800088924 /* TMPRemoteLogPersistenceItemCountsStrategy.h in Headers */,
+				CE8FA39121D08A17003CF3FB /* TMPPaymentUIPaymentMethodLogicResponder.h in Headers */,
+				CEBB857521E6DC5600CAAD7B /* TMLogLevelObserver.h in Headers */,
+				CE252C2E21F19294005D0616 /* TMPSourceTypeConstants.h in Headers */,
+				CE8FA34A21C8D1A1003CF3FB /* TMPSourcePoller.h in Headers */,
+				CEBB858421E7115F00CAAD7B /* TMPRemoteLogReporter.h in Headers */,
+				CE8FA36F21CB7A15003CF3FB /* TMPSourceContext.h in Headers */,
+				CE252C1D21EDBC68005D0616 /* TMPReachability.h in Headers */,
+				CE815C1822607DA80085FF3A /* TMPPaymentSourceParamsPreparer.h in Headers */,
+				CE8FA32421C877DA003CF3FB /* TMPPaymentAuthorizable.h in Headers */,
+				CEBB855821E5C28400CAAD7B /* TMPSourceParams+TMPPrivate.h in Headers */,
+				CE097EAB21DDC958009CF715 /* TMPSourceTypeListParams.h in Headers */,
+				CEBB857921E6E2AC00CAAD7B /* TMLogConsolePrinter.h in Headers */,
+				CE097EA621DDACB1009CF715 /* UIImageView+TMDownLoadImage.h in Headers */,
+				CED5FB4121DC3EA5006F5839 /* TMPDefaultPaymentVCPresenter.h in Headers */,
+				CE252C0A21ECCA34005D0616 /* TMPSDKConstants.h in Headers */,
+				CEBB854A21E4463B00CAAD7B /* TMLocalizationUtils.h in Headers */,
+				CE2C33D7222CEEC400088924 /* TMPCrashReporter.h in Headers */,
+				CE097EAF21DDC9AF009CF715 /* TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.h in Headers */,
+				CED5FAF321D5C0EC006F5839 /* NSError+TMPErrorGenerator.h in Headers */,
+				CEBB855B21E5C45700CAAD7B /* TMPPaymentSourceParamsProcessable.h in Headers */,
+				CE8FA2F321C765DC003CF3FB /* TMEndpointRequestOperation.h in Headers */,
+				CE252C2B21F054F6005D0616 /* TMPUIPaymentSourceParamsPreparer.h in Headers */,
+				CED5FB3D21DC3D39006F5839 /* TMPPaymentVCPresenter.h in Headers */,
+				CEBB855221E472BF00CAAD7B /* TMLogService.h in Headers */,
+				CE8FA31621C78314003CF3FB /* TMPPaymentDefaultUI.h in Headers */,
+				CEEC128A21F6EEC000D393B1 /* NSDictionary+TMPExtension.h in Headers */,
+				CEBB855E21E5D66500CAAD7B /* TakeMePay+TMPPrivate.h in Headers */,
+				CE252C1521ED79CE005D0616 /* TMPPaymentEnums.h in Headers */,
+				CE8FA31321C781F1003CF3FB /* TMPPaymentUIFullyCustomizer.h in Headers */,
+				CE8FA2D021C76423003CF3FB /* TMNetworkDataSerializer.h in Headers */,
+				CE20C50E2251E4E700CDBB21 /* TMPPaymentAlipay.h in Headers */,
+				CE9BF98922642510003C7B78 /* TMPPaymentRequestStatePoller.h in Headers */,
+				CED5FAEA21D4AED7006F5839 /* TMPPaymentServiceClient+TMPPrivate.h in Headers */,
+				CE8FA35A21CA26DD003CF3FB /* NSMutableDictionary+TMFExtension.h in Headers */,
+				CE8FA37D21CB911A003CF3FB /* TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.h in Headers */,
+				CE8FA30D21C77740003CF3FB /* TMDictionaryConvertible.h in Headers */,
+				CE8FA30421C76784003CF3FB /* TMUtils.h in Headers */,
+				CEEC127821F69C1700D393B1 /* TMPPayment+TMPPrivate.h in Headers */,
+				CE8FA2F821C765E3003CF3FB /* TMNetworkingOperationManager.h in Headers */,
+				CE2C33C52228C68A00088924 /* TMPRemoteLogPersistenceStrategy.h in Headers */,
+				CE8FA2E821C765A4003CF3FB /* TMNetworkDataJSONSerializer.h in Headers */,
+				CEBB857F21E70F6100CAAD7B /* TMLogInformation+TMPErrorConvertible.h in Headers */,
+				CE252C1121ED729C005D0616 /* TMPSourceContext+TMPPrivate.h in Headers */,
+				CE37A92D228AB7930049C71A /* TMPPayment+TMPClosureSupport.h in Headers */,
+				CE8FA3B321D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.h in Headers */,
+				CE8FA2BF21C75E0F003CF3FB /* TMPPaymentAuthViaWebRedirect.h in Headers */,
+				CE8FA39421D08E83003CF3FB /* TMPPaymentMethod.h in Headers */,
+				CE8FA2FE21C765EF003CF3FB /* TMEndpointServiceImpl.h in Headers */,
+				CE8FA2FF21C765EF003CF3FB /* TMEndpointAPIManager.h in Headers */,
+				CE8FA2CE21C76423003CF3FB /* TMEndpointAPIRequest.h in Headers */,
+				CE252C3B21F55999005D0616 /* TMPPaymentMethod+TMPPrivate.h in Headers */,
+				CE8FA2CF21C76423003CF3FB /* TMEndpointService.h in Headers */,
+				CED5FADF21D2637E006F5839 /* TakeMePay.h in Headers */,
+				CE8FA35721CA25DE003CF3FB /* NSArray+TMFExtension.h in Headers */,
+				CE2C33CD222BC76A00088924 /* TMPRemoteLogInfo+TMPPrivate.h in Headers */,
+				CE8FA3B921D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.h in Headers */,
+				CE8FA2EA21C765A4003CF3FB /* TMNetworkDataFormURLEncodedSerializer.h in Headers */,
+				CE097EA221DDAC2A009CF715 /* TMImageLoader.h in Headers */,
+				CEEC129521F6F43400D393B1 /* TMPPaymentMethodRegisterSupport.h in Headers */,
+				CE32AAB822656C9D00A95D0A /* TMPSourceTypesContext.h in Headers */,
+				CE8FA2ED21C765AF003CF3FB /* TMNetworkConfiguration.h in Headers */,
+				CE8FA2B221C75CB6003CF3FB /* TMPPaymentServiceClient.h in Headers */,
+				CE252C1921EDB376005D0616 /* TMDeviceInfo.h in Headers */,
+				CE8FA3C021D0BF10003CF3FB /* TMPPaymentUITheme.h in Headers */,
+				CE8FA28E21C74564003CF3FB /* TakeMePaySDK.h in Headers */,
+				CED5FB8D21DC89A2006F5839 /* TMPDefaultPaymentPresentationController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CE8FA27C21C74563003CF3FB /* TakeMePaySDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8FA29121C74564003CF3FB /* Build configuration list for PBXNativeTarget "TakeMePaySDK" */;
+			buildPhases = (
+				CE8FA27821C74563003CF3FB /* Headers */,
+				CE8FA27921C74563003CF3FB /* Sources */,
+				CE8FA27A21C74563003CF3FB /* Frameworks */,
+				CE8FA27B21C74563003CF3FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakeMePaySDK;
+			productName = TakeMePaySDK;
+			productReference = CE8FA27D21C74563003CF3FB /* TakeMePaySDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE8FA28521C74564003CF3FB /* TakeMePaySDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8FA29421C74564003CF3FB /* Build configuration list for PBXNativeTarget "TakeMePaySDKTests" */;
+			buildPhases = (
+				8C0BA4E1807922D223CB29BE /* [CP] Check Pods Manifest.lock */,
+				CE8FA28221C74564003CF3FB /* Sources */,
+				CE8FA28321C74564003CF3FB /* Frameworks */,
+				CE8FA28421C74564003CF3FB /* Resources */,
+				1B2F3A480EDE2D12420E8089 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8FA28921C74564003CF3FB /* PBXTargetDependency */,
+			);
+			name = TakeMePaySDKTests;
+			productName = TakeMePaySDKTests;
+			productReference = CE8FA28621C74564003CF3FB /* TakeMePaySDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE8FA27421C74563003CF3FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TMP;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = JapanFoodie;
+				TargetAttributes = {
+					CE8FA27C21C74563003CF3FB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CE8FA28521C74564003CF3FB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CEEC132521F8449300D393B1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = CE8FA27721C74563003CF3FB /* Build configuration list for PBXProject "TakeMePaySDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+				"zh-Hans",
+				"zh-Hant",
+				"zh-HK",
+			);
+			mainGroup = CE8FA27321C74563003CF3FB;
+			productRefGroup = CE8FA27E21C74563003CF3FB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CEFC5197228E432D00A0618F /* Products */;
+					ProjectRef = CEFC5196228E432D00A0618F /* CoffeeDelivery.xcodeproj */;
+				},
+				{
+					ProductGroup = CEF09438226479AE00FACDC2 /* Products */;
+					ProjectRef = CEF09437226479AE00FACDC2 /* TakeMePayWeChatPaySupport.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CE8FA27C21C74563003CF3FB /* TakeMePaySDK */,
+				CE8FA28521C74564003CF3FB /* TakeMePaySDKTests */,
+				CEEC132521F8449300D393B1 /* Universal-TakeMePaySDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CEF09441226479AE00FACDC2 /* TakeMePayWeChatPaySupport.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = TakeMePayWeChatPaySupport.framework;
+			remoteRef = CEF09440226479AE00FACDC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEF09443226479AE00FACDC2 /* TakeMePayWeChatPaySupportTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TakeMePayWeChatPaySupportTests.xctest;
+			remoteRef = CEF09442226479AE00FACDC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEFC519D228E432E00A0618F /* CoffeeDelivery.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CoffeeDelivery.app;
+			remoteRef = CEFC519C228E432E00A0618F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEFC519F228E432E00A0618F /* CoffeeDeliveryTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoffeeDeliveryTests.xctest;
+			remoteRef = CEFC519E228E432E00A0618F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CEFC51A1228E432E00A0618F /* CoffeeDeliveryUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoffeeDeliveryUITests.xctest;
+			remoteRef = CEFC51A0228E432E00A0618F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE8FA27B21C74563003CF3FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEBB85C221E854D100CAAD7B /* PaymentIcons.plist in Resources */,
+				CE3EDA4D227D447900E30C11 /* Localizable.strings in Resources */,
+				CE097EB721DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.xib in Resources */,
+				CEBB853D21E2E72B00CAAD7B /* Resources.xcassets in Resources */,
+				CE8FA3B521D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.xib in Resources */,
+				CE8FA3BB21D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8FA28421C74564003CF3FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B2F3A480EDE2D12420E8089 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakeMePaySDKTests/Pods-TakeMePaySDKTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakeMePaySDKTests/Pods-TakeMePaySDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C0BA4E1807922D223CB29BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakeMePaySDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEEC132921F844B600D393B1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\nrm -rf \"${PROJECT_DIR}/../../takemepay_sdk_ios_framework_public/TakeMePaySDK-Core/${PROJECT_NAME}.framework\"\n\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/../../takemepay_sdk_ios_framework_public/TakeMePaySDK-Core/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE8FA27921C74563003CF3FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE252C3221F54FC2005D0616 /* TMPPaymentMethodItem+TMPUIInfo.m in Sources */,
+				CEBB859021E73D5400CAAD7B /* _TMPPaymentLogInformationInterceptor.m in Sources */,
+				CED5FAE021D2637E006F5839 /* TakeMePay.m in Sources */,
+				CE20C50F2251E4E700CDBB21 /* TMPPaymentAlipay.m in Sources */,
+				CEBB85AC21E82CD100CAAD7B /* UILabel+TMPLocalization.m in Sources */,
+				CE097EA721DDACB1009CF715 /* UIImageView+TMDownLoadImage.m in Sources */,
+				CEBB858521E7115F00CAAD7B /* TMPRemoteLogReporter.m in Sources */,
+				CE8FA2EE21C765AF003CF3FB /* TMNetworkConfiguration.m in Sources */,
+				CE097EA321DDAC2A009CF715 /* TMImageLoader.m in Sources */,
+				CE097EB021DDC9AF009CF715 /* TMPPaymentServiceClient+TMPSourceTypeListLowLevelInfoManipulatorSupport.m in Sources */,
+				CE32AAB922656C9D00A95D0A /* TMPSourceTypesContext.m in Sources */,
+				CEEC128B21F6EEC000D393B1 /* NSDictionary+TMPExtension.m in Sources */,
+				CE252C3C21F55999005D0616 /* TMPPaymentMethod+TMPPrivate.m in Sources */,
+				CE8FA2AB21C75C7C003CF3FB /* TMPSource.m in Sources */,
+				CEBB854B21E4463B00CAAD7B /* TMLocalizationUtils.m in Sources */,
+				CE097EAC21DDC958009CF715 /* TMPSourceTypeListParams.m in Sources */,
+				CEBB854221E3078700CAAD7B /* UIImage+TMPLoadImageFromSDKBundle.m in Sources */,
+				CE8FA2C021C75E0F003CF3FB /* TMPPaymentAuthViaWebRedirect.m in Sources */,
+				CE8FA2B721C75D10003CF3FB /* TMPPayment.m in Sources */,
+				CE8FA3B421D0A7D5003CF3FB /* TMPPaymentDefaultUICheckoutCounterViewController.m in Sources */,
+				CE8FA34621C8C0C0003CF3FB /* TMPSourceParams.m in Sources */,
+				CE8FA2F721C765E3003CF3FB /* TMNetworkingOperationManager.m in Sources */,
+				CED5FAF421D5C0EC006F5839 /* NSError+TMPErrorGenerator.m in Sources */,
+				CEBB855F21E5D66500CAAD7B /* TakeMePay+TMPPrivate.m in Sources */,
+				CEFC513B228BDF8500A0618F /* _TMPPaymentClosureSupportInterceptor.m in Sources */,
+				CEEC127921F69C1700D393B1 /* TMPPayment+TMPPrivate.m in Sources */,
+				CE8FA39521D08E83003CF3FB /* TMPPaymentMethod.m in Sources */,
+				CE8FA2E921C765A4003CF3FB /* TMNetworkDataJSONSerializer.m in Sources */,
+				CE8FA30521C76784003CF3FB /* TMUtils.m in Sources */,
+				CED5FB4221DC3EA5006F5839 /* TMPDefaultPaymentVCPresenter.m in Sources */,
+				CE8FA2E721C765A4003CF3FB /* TMNetworkDataFormURLEncodedSerializer.m in Sources */,
+				CE8FA2F421C765DC003CF3FB /* TMEndpointRequestOperation.m in Sources */,
+				CECF1127225C8CA00008E7E7 /* TMPSource+TMPPrivate.m in Sources */,
+				CE252C2C21F054F6005D0616 /* TMPUIPaymentSourceParamsPreparer.m in Sources */,
+				CE8FA34B21C8D1A1003CF3FB /* TMPSourcePoller.m in Sources */,
+				CE097EB621DE0A48009CF715 /* TMPPaymentDefaultUIPaymentMethodItemCellTableViewCell.m in Sources */,
+				CE097EBD21DEE289009CF715 /* TMPDefaultPaymentAnimator.m in Sources */,
+				CE37A92E228AB7930049C71A /* TMPPayment+TMPClosureSupport.m in Sources */,
+				CEBB855321E472BF00CAAD7B /* TMLogService.m in Sources */,
+				CE2C33CA2228CA3800088924 /* TMPRemoteLogPersistenceItemCountsStrategy.m in Sources */,
+				CED5FB8E21DC89A2006F5839 /* TMPDefaultPaymentPresentationController.m in Sources */,
+				CE8FA37E21CB911A003CF3FB /* TMPPaymentServiceClient+TMPSourceLowLevelInfoManipulatorSupport.m in Sources */,
+				CE8FA2FD21C765EF003CF3FB /* TMEndpointServiceImpl.m in Sources */,
+				CE8FA37021CB7A15003CF3FB /* TMPSourceContext.m in Sources */,
+				CE8FA32921C87998003CF3FB /* TMPConfiguration.m in Sources */,
+				CE2C33CE222BC76A00088924 /* TMPRemoteLogInfo+TMPPrivate.m in Sources */,
+				CE8FA3C121D0BF10003CF3FB /* TMPPaymentUITheme.m in Sources */,
+				CE252C1A21EDB376005D0616 /* TMDeviceInfo.m in Sources */,
+				CEBB855921E5C28400CAAD7B /* TMPSourceParams+TMPPrivate.m in Sources */,
+				CE8FA30021C765EF003CF3FB /* TMEndpointAPIManager.m in Sources */,
+				CE2C33D8222CEEC400088924 /* TMPCrashReporter.m in Sources */,
+				CE8FA31721C78314003CF3FB /* TMPPaymentDefaultUI.m in Sources */,
+				CE252C1E21EDBC68005D0616 /* TMPReachability.m in Sources */,
+				CEBB858021E70F6100CAAD7B /* TMLogInformation+TMPErrorConvertible.m in Sources */,
+				CED5FAEB21D4AED7006F5839 /* TMPPaymentServiceClient+TMPPrivate.m in Sources */,
+				CE9BF98A22642510003C7B78 /* TMPPaymentRequestStatePoller.m in Sources */,
+				CEBB857A21E6E2AC00CAAD7B /* TMLogConsolePrinter.m in Sources */,
+				CE8FA3BA21D0A7EB003CF3FB /* TMPPaymentDefaultUIPaymentMethodViewController.m in Sources */,
+				CE252C1221ED729C005D0616 /* TMPSourceContext+TMPPrivate.m in Sources */,
+				CEBB85B021E82EF900CAAD7B /* UIButton+TMPLocalization.m in Sources */,
+				CE8FA35B21CA26DD003CF3FB /* NSMutableDictionary+TMFExtension.m in Sources */,
+				CE8FA2B321C75CB6003CF3FB /* TMPPaymentServiceClient.m in Sources */,
+				CEEC129621F6F43400D393B1 /* TMPPaymentMethodRegisterSupport.m in Sources */,
+				CE8FA35621CA25DE003CF3FB /* NSArray+TMFExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8FA28221C74564003CF3FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFC5144228BF2A500A0618F /* TMPTestPaymentMethod.m in Sources */,
+				CE8FA28C21C74564003CF3FB /* TakeMePaySDKTests.m in Sources */,
+				CEFC5141228BF28900A0618F /* TMPTestSourceParamsPreparer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE8FA28921C74564003CF3FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE8FA27C21C74563003CF3FB /* TakeMePaySDK */;
+			targetProxy = CE8FA28821C74564003CF3FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE3EDA4F227D447900E30C11 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE3EDA4E227D447900E30C11 /* en */,
+				CE635CE9227D48BE00E116E6 /* ja */,
+				CE55184E227D4B4C006C1502 /* zh-Hans */,
+				CE551851227D4B5A006C1502 /* zh-Hant */,
+				CE551853227D4B6B006C1502 /* zh-HK */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE8FA28F21C74564003CF3FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE8FA29021C74564003CF3FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CE8FA29221C74564003CF3FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3PW2MRU23R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TakeMePaySDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TakeMePaySDK/BuildInPlugins/PaymentMethods/WeChatPay/SDK",
+					"$(PROJECT_DIR)/TakeMePaySDK/BuildInPlugins/PaymentMethods/WeChatPay/InternalHandlers/AppPayment/SDK",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Objc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takeme.takemepay-sdk";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE8FA29321C74564003CF3FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3PW2MRU23R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TakeMePaySDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TakeMePaySDK/BuildInPlugins/PaymentMethods/WeChatPay/SDK",
+					"$(PROJECT_DIR)/TakeMePaySDK/BuildInPlugins/PaymentMethods/WeChatPay/InternalHandlers/AppPayment/SDK",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-Objc",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.takeme.takemepay-sdk";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE8FA29521C74564003CF3FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3162115E1D55300ACA6A58EB /* Pods-TakeMePaySDKTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TakeMePaySDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takeme.takemepay.TakeMePaySDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE8FA29621C74564003CF3FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE506AB9A47BB81F62541AD5 /* Pods-TakeMePaySDKTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TakeMePaySDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.takeme.takemepay.TakeMePaySDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CEEC132721F8449300D393B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEEC132821F8449300D393B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE8FA27721C74563003CF3FB /* Build configuration list for PBXProject "TakeMePaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8FA28F21C74564003CF3FB /* Debug */,
+				CE8FA29021C74564003CF3FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8FA29121C74564003CF3FB /* Build configuration list for PBXNativeTarget "TakeMePaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8FA29221C74564003CF3FB /* Debug */,
+				CE8FA29321C74564003CF3FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8FA29421C74564003CF3FB /* Build configuration list for PBXNativeTarget "TakeMePaySDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8FA29521C74564003CF3FB /* Debug */,
+				CE8FA29621C74564003CF3FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEEC132621F8449300D393B1 /* Build configuration list for PBXAggregateTarget "Universal-TakeMePaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEEC132721F8449300D393B1 /* Debug */,
+				CEEC132821F8449300D393B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE8FA27421C74563003CF3FB /* Project object */;
+}
