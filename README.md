@@ -1,4 +1,4 @@
-# TakeMePaySDK
+# TakeMe Pay iOS SDK
 
 This is the source code of TakeMePaySDK from TakeMe Pay on iOS platform. The SDK is used and designed to help users to integrate multiple payment brands in their apps. We open source it to help developers understand the architechture and design of the TakeMePaySDK well.
 
